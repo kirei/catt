@@ -1,46 +1,75 @@
 # Certification Authority Trust Tracker
 
-## TA Sources
+----
+
+## Primary Sources
 
 ### Apple
 
+Root certificates extracted using **extract-osx-trust.sh** and and split into
+files using **split-bundle.pl**.
+
+More information:
+
 - http://www.apple.com/certificateauthority/ca_program.html
-- TA extracted using extract-osx-trust.sh
-  
+
 ### Microsoft
- 
+
+A snapshot of trusted root certificates can be found in
+**xfiles/microsoft-2012-12.xlsx**. No tool for extraction not yet available.
+
+More information:
+
 - http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
 - http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
- 
+
 ### Mozilla NSS
 
+Root certificates fetched using **mk-ca-bundle.pl** and split into files using
+**split-bundle.pl**. EV OIDs extracted using **extract_mozilla_ev_data.py**.
+
+More information:
+
 - http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
-- TA extracted using mk-ca-bundle.pl
-
 - EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
-
 
 ### Opera
 
+No tool for extraction not yet available.
+
+More information:
+
 - http://www.opera.com/docs/ca/
+- Will transition to NSS
 
-(will transition to NSS)
+----
 
+## Secondary Sources
 
 ### Google Chrome
+
+Chrome trusts root certificates included by the underlying operating system:
+
+- Microsoft: see above
+- Apple OS X: see above
+- Linux: NSS
+- Android: NSS, see below
+
+More information:
 
 - http://www.chromium.org/Home/chromium-security/root-ca-policy
 - http://src.chromium.org/viewvc/chrome/trunk/src/net/cert/ev_root_ca_metadata.cc
 
 ### Google ChromeOS
 
-- Pulled from NSS
+All root certificates pulled from NSS.
 
 ### Google Android
+
+All root certificates mostly pulled from NSS, although this may be changed by
+devices manufacturers or carriers.
 
 - https://android.googlesource.com/platform/libcore/+/master/CaCerts.mk
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files/cacerts/
-
-
 - http://www.andreabaccega.com/blog/2010/09/23/android-root-certification-authorities-list/
