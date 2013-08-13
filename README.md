@@ -19,7 +19,7 @@
 ### Mozilla NSS
 
 - TA extracted using mk-ca-bundle.pl
-- EV OIDs extracted using extract_mozilla_ev_data.py
+- EV OIDs extracted using extract-mozilla-ev.py
 
 - http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
 - EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
