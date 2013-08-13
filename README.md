@@ -7,16 +7,24 @@
 ### Apple
 
 Root certificates extracted using **extract-osx-trust.sh** and and split into
-files using **split-bundle.pl**.
+files using **split-bundle.pl**. EV OIDs extracted using **extract-osx-ev-pl**.
 
 More information:
 
-- TA extracted using extract-osx-trust.sh
-- EV OIDs extracted using extract-osx-ev.pl
-
 - http://www.apple.com/certificateauthority/ca_program.html
+
 - Root CA: /System/Library/Keychains/SystemRootCertificates.keychain
 - EV status: /System/Library/Keychains/EVRoots.plist
+
+### Mozilla NSS
+
+Root certificates fetched using **mk-ca-bundle.pl** and split into files using
+**split-bundle.pl**. EV OIDs extracted using **extract-mozilla-ev.py**.
+
+More information:
+
+- Root CA: http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
+- EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
 
 ### Microsoft
 
@@ -27,19 +35,6 @@ More information:
 
 - http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
 - http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
-
-### Mozilla NSS
-
-Root certificates fetched using **mk-ca-bundle.pl** and split into files using
-**split-bundle.pl**. EV OIDs extracted using **extract_mozilla_ev_data.py**.
-
-More information:
-
-- TA extracted using mk-ca-bundle.pl
-- EV OIDs extracted using extract-mozilla-ev.py
-
-- http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
-- EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
 
 ### Opera
 
