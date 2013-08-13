@@ -4,9 +4,13 @@
 
 ### Apple
 
-- http://www.apple.com/certificateauthority/ca_program.html
 - TA extracted using extract-osx-trust.sh
-  
+- EV OIDs extracted using extract-osx-ev.pl
+
+- http://www.apple.com/certificateauthority/ca_program.html
+- Root CA: /System/Library/Keychains/SystemRootCertificates.keychain
+- EV status: /System/Library/Keychains/EVRoots.plist
+
 ### Microsoft
  
 - http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
@@ -14,9 +18,10 @@
  
 ### Mozilla NSS
 
-- http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
 - TA extracted using mk-ca-bundle.pl
+- EV OIDs extracted using extract_mozilla_ev_data.py
 
+- http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
 - EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
 
 
