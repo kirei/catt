@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+#
+# Extract all trusted EV OIDs from OSX
 
 use warnings;
 use strict;
