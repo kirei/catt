@@ -1,51 +1,77 @@
 # Certification Authority Trust Tracker
 
-## TA Sources
+----
+
+## Primary Sources
 
 ### Apple
 
-- TA extracted using extract-osx-trust.sh
-- EV OIDs extracted using extract-osx-ev.pl
+Root certificates extracted using **extract-osx-trust.sh** and and split into
+files using **split-bundle.pl**. EV OIDs extracted using **extract-osx-ev-pl**.
+
+More information:
 
 - http://www.apple.com/certificateauthority/ca_program.html
+
 - Root CA: /System/Library/Keychains/SystemRootCertificates.keychain
 - EV status: /System/Library/Keychains/EVRoots.plist
 
-### Microsoft
- 
-- http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
-- http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
- 
 ### Mozilla NSS
 
-- TA extracted using mk-ca-bundle.pl
-- EV OIDs extracted using extract-mozilla-ev.py
+Root certificates fetched using **mk-ca-bundle.pl** and split into files using
+**split-bundle.pl**. EV OIDs extracted using **extract-mozilla-ev.py**.
 
-- http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
+More information:
+
+- Root CA: http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
 - EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
 
+### Microsoft
+
+A snapshot of trusted root certificates can be found in
+**xfiles/microsoft-2012-12.xlsx**. No tool for extraction not yet available.
+
+More information:
+
+- http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
+- http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
 
 ### Opera
 
+No tool for extraction not yet available.
+
+More information:
+
 - http://www.opera.com/docs/ca/
 
-(will transition to Mozilla NSS)
+---
 
+## Secondary Sources
 
 ### Google Chrome
+
+Chrome trusts root certificates included by the underlying operating system:
+
+- Microsoft: see above
+- Apple OS X: see above
+- Linux: NSS
+- Android: NSS, see below
+
+More information:
 
 - http://www.chromium.org/Home/chromium-security/root-ca-policy
 - http://src.chromium.org/viewvc/chrome/trunk/src/net/cert/ev_root_ca_metadata.cc
 
 ### Google ChromeOS
 
-- Pulled from Mozilla NSS
+All root certificates pulled from NSS.
 
 ### Google Android
+
+All root certificates mostly pulled from NSS, although this may be changed by
+devices manufacturers or carriers.
 
 - https://android.googlesource.com/platform/libcore/+/master/CaCerts.mk
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files/cacerts/
-
-
 - http://www.andreabaccega.com/blog/2010/09/23/android-root-certification-authorities-list/
