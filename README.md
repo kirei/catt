@@ -11,7 +11,12 @@ files using **split-bundle.pl**.
 
 More information:
 
+- TA extracted using extract-osx-trust.sh
+- EV OIDs extracted using extract-osx-ev.pl
+
 - http://www.apple.com/certificateauthority/ca_program.html
+- Root CA: /System/Library/Keychains/SystemRootCertificates.keychain
+- EV status: /System/Library/Keychains/EVRoots.plist
 
 ### Microsoft
 
@@ -29,6 +34,9 @@ Root certificates fetched using **mk-ca-bundle.pl** and split into files using
 **split-bundle.pl**. EV OIDs extracted using **extract_mozilla_ev_data.py**.
 
 More information:
+
+- TA extracted using mk-ca-bundle.pl
+- EV OIDs extracted using extract-mozilla-ev.py
 
 - http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt
 - EV status: https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp
