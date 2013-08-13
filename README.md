@@ -29,7 +29,7 @@
 
 - http://www.opera.com/docs/ca/
 
-(will transition to NSS)
+(will transition to Mozilla NSS)
 
 
 ### Google Chrome
@@ -39,7 +39,7 @@
 
 ### Google ChromeOS
 
-- Pulled from NSS
+- Pulled from Mozilla NSS
 
 ### Google Android
 
