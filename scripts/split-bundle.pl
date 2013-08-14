@@ -29,16 +29,22 @@ while (<STDIN>) {
         print EXPORT $_;
         close(EXPORT);
 
+        # get certificate fingerprint
         my $fp = `openssl x509 -in $filename -noout -fingerprint`;
         chomp $fp;
         $fp =~ s/SHA1 Fingerprint=//;
         $fp =~ s/://g;
 
+        # get certificate subject
         my $subject = `openssl x509 -in $filename -noout -subject`;
         chomp $subject;
         $subject =~ s/subject= //;
 
-        rename($filename, sprintf("%s.pem", $fp));
+        # normalize PEM file
+        `openssl x509 -in $filename -out $fp.pem`;
+
+        # remove temporary file
+        unlink($filename);
 
         print $fp,      "\n";
         print $subject, "\n";
