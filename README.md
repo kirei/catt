@@ -49,6 +49,10 @@ More information:
 Root certificates extracted from the Java keystore using
 **extract-java-trust.pl**.
 
+More information:
+
+- http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
+
 
 ---
 
