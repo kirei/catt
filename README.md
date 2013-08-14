@@ -1,6 +1,5 @@
 # Certification Authority Trust Tracker
 
-----
 
 ## Primary Sources
 
