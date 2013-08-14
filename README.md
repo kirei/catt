@@ -28,7 +28,7 @@ More information:
 ### Microsoft
 
 A snapshot of trusted root certificates can be found in
-**xfiles/microsoft-2012-12.xlsx**. No tool for extraction not yet available.
+**xfiles/microsoft-2012-12.xlsx**. No tool for extraction yet available.
 
 More information:
 
