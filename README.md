@@ -44,6 +44,12 @@ More information:
 
 - http://www.opera.com/docs/ca/
 
+### Oracle Java
+
+Root certificates extracted from the Java keystore using
+**extract-java-trust.pl**.
+
+
 ---
 
 ## Secondary Sources
