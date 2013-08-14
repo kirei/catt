@@ -40,7 +40,7 @@ my $url = 'http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/
 # If the OpenSSL commandline is not in search path you can configure it here!
 my $openssl = 'openssl';
 
-my $version = '1.18';
+my $version = '1.19';
 
 $opt_w = 76; # default base64 encoded lines length
 
@@ -164,7 +164,7 @@ while (<TXT>) {
   if ($start_of_cert && /^CKA_LABEL UTF8 \"(.*)\"/) {
     $caname = $1;
   }
-  my $untrusted = 0;
+  my $untrusted = 1;
   if ($start_of_cert && /^CKA_VALUE MULTILINE_OCTAL/) {
     my $data;
     while (<TXT>) {
@@ -184,9 +184,8 @@ while (<TXT>) {
     # now scan the trust part for untrusted certs
     while (<TXT>) {
       last if (/^#/);
-      if (/^CKA_TRUST_SERVER_AUTH\s+CK_TRUST\s+CKT_NSS_NOT_TRUSTED$/
-          or /^CKA_TRUST_SERVER_AUTH\s+CK_TRUST\s+CKT_NSS_TRUST_UNKNOWN$/) {
-          $untrusted = 1;
+      if (/^CKA_TRUST_SERVER_AUTH\s+CK_TRUST\s+CKT_NSS_TRUSTED_DELEGATOR$/) {
+          $untrusted = 0;
       }
     }
     if ($untrusted) {
