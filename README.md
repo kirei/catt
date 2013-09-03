@@ -53,8 +53,6 @@ More information:
 - http://www.oracle.com/technetwork/java/javase/javasecarootcertsprogram-1876540.html
 
 
----
-
 ## Secondary Sources
 
 ### Google Chrome
@@ -84,3 +82,21 @@ devices manufacturers or carriers.
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files
 - https://android.googlesource.com/platform/libcore/+/master/luni/src/main/files/cacerts/
 - http://www.andreabaccega.com/blog/2010/09/23/android-root-certification-authorities-list/
+
+
+
+## Publishing Trusted Root Certificates
+
+We urge root certificate program managers to publish the following information:
+
+- All currently approved and trusted root certificates. The preferred
+  publishing format is X.509 certificates encoded as PEM or DER, but other
+  formats may be usable as well (e.g., Mozilla certdata as mentioned above).
+  Note that publishing certificate fingerprints is not enough - we do need the
+  actual certificate.
+
+- All currently approved and trusted Extended Validation OIDs together with
+  each corresponding issuing CA fingerprint.
+
+We strongly recommend that the data above is published at a stable long-term
+URL, in order to be able to fetch the data automatically.
