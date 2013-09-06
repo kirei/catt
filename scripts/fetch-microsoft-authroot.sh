@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Fetch trusted root CAs from Microsoft
+# Fetch trusted root CA metadata from Microsoft
 
 URL="http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab"
 
