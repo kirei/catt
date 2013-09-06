@@ -27,13 +27,16 @@ More information:
 
 ### Microsoft
 
-A snapshot of trusted root certificates can be found in
-**xfiles/microsoft-2012-12.xlsx**. No tool for extraction yet available.
+Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**.
+
+A snapshot of trusted root certificates can also be found in
+**xfiles/microsoft-2012-12.xlsx**.
 
 More information:
 
 - http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
 - http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
+
 
 ### Opera
 
