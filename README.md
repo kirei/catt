@@ -27,7 +27,7 @@ More information:
 
 ### Microsoft
 
-Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**.
+Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**. Actual root certificates fetched using **fetch-microsoft-certs.sh**.
 
 A snapshot of trusted root certificates can also be found in
 **xfiles/microsoft-2012-12.xlsx**.
