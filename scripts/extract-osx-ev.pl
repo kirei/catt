@@ -24,4 +24,4 @@ foreach my $oid (keys %{$data}) {
     }
 }
 
-print to_json( $ev, { ascii => 1, pretty => 1 } );
+print to_json($ev, { ascii => 1, pretty => 1 });
