@@ -38,14 +38,6 @@ More information:
 - http://social.technet.microsoft.com/wiki/contents/articles/14215.windows-and-windows-phone-8-ssl-root-certificate-program-member-cas.aspx
 
 
-### Opera
-
-No tool for extraction not yet available.
-
-More information:
-
-- http://www.opera.com/docs/ca/
-
 ### Oracle Java
 
 Root certificates extracted from the Java keystore using
