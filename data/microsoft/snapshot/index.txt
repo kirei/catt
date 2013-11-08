@@ -66,15 +66,14 @@ subject= /C=DE/O=DATEV eG/CN=CA DATEV INT 02
 subject= /C=DE/O=DATEV eG/CN=CA DATEV STD 01
 subject= /C=DE/O=DATEV eG/CN=CA DATEV STD 02
 subject= /C=DE/O=Deutsche Telekom AG/OU=T-TeleSec Trust Center/CN=Deutsche Telekom Root CA 2
+subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 2
 subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 3
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 2 CA/CN=TC TrustCenter Class 2 CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 3 CA/CN=TC TrustCenter Class 3 CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 4 CA/CN=TC TrustCenter Class 4 CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA I
-subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA III
 subject= /C=DE/ST=Baden-Wuerttemberg (BW)/L=Stuttgart/O=Deutscher Sparkassen Verlag GmbH/CN=S-TRUST Authentication and Encryption Root CA 2005:PN
-subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 1 CA/emailAddress=certificate@trustcenter.de
 subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 2 CA/emailAddress=certificate@trustcenter.de
 subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 3 CA/emailAddress=certificate@trustcenter.de
 subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 4 CA/emailAddress=certificate@trustcenter.de
@@ -155,6 +154,7 @@ subject= /C=JP/O=Japan Certification Services, Inc./CN=SecureSign RootCA11
 subject= /C=JP/O=Japan Certification Services, Inc./CN=SecureSign RootCA2
 subject= /C=JP/O=Japan Certification Services, Inc./CN=SecureSign RootCA3
 subject= /C=JP/O=Japanese Government/OU=ApplicationCA
+subject= /C=JP/O=Japanese Government/OU=GPKI/CN=ApplicationCA2 Root
 subject= /C=JP/O=LGPKI/OU=Application CA G2
 subject= /C=JP/O=SECOM Trust Systems CO.,LTD./OU=Security Communication EV RootCA1
 subject= /C=JP/O=SECOM Trust Systems CO.,LTD./OU=Security Communication RootCA2
@@ -181,6 +181,8 @@ subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 2 CA 1
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 2 Root CA
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 3 CA 1
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 3 Root CA
+subject= /C=PL/O=Krajowa Izba Rozliczeniowa S.A./CN=SZAFIR ROOT CA
+subject= /C=PL/O=Telekomunikacja Polska S.A./OU=Signet Certification Authority/CN=Signet Root CA
 subject= /C=PL/O=Unizeto Sp. z o.o./CN=Certum CA
 subject= /C=PL/O=Unizeto Technologies S.A./OU=Certum Certification Authority/CN=Certum Trusted Network CA
 subject= /C=PT/O=SCEE/CN=ECRaizEstado
@@ -196,8 +198,11 @@ subject= /C=SI/O=Halcom/CN=Halcom CA PO 2
 subject= /C=SI/O=Halcom/CN=Halcom Root CA
 subject= /C=SI/O=POSTA/OU=POSTArCA
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig
+subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R1
+subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R2
 subject= /C=TN/O=ANCE/OU=ANCE WEB/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
 subject= /C=TN/O=ANCE/OU=Certification & PKI/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
+subject= /C=TR/L=Ankara/O=E-Tu\xC4\x9Fra EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./OU=E-Tugra Sertifikasyon Merkezi/CN=E-Tugra Certification Authority
 subject= /C=TR/L=Gebze - Kocaeli/O=T\xC3\xBCrkiye Bilimsel ve Teknolojik Ara\xC5\x9Ft\xC4\xB1rma Kurumu - T\xC3\x9CB\xC4\xB0TAK/OU=Ulusal Elektronik ve Kriptoloji Ara\xC5\x9Ft\xC4\xB1rma Enstit\xC3\xBCs\xC3\xBC - UEKAE/OU=Kamu Sertifikasyon Merkezi/CN=T\xC3\x9CB\xC4\xB0TAK UEKAE K\xC3\xB6k Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1 - S\xC3\xBCr\xC3\xBCm 3
 subject= /C=TR/O=Elektronik Bilgi Guvenligi A.S./CN=E-GUVEN Kok Elektronik Sertifika Hizmet Saglayicisi S2
 subject= /C=TR/O=Elektronik Bilgi Guvenligi A.S./CN=E-GUVEN Kok Elektronik Sertifika Hizmet Saglayicisi S3
@@ -212,8 +217,13 @@ subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium ECC
 subject= /C=US/O=America Online Inc./CN=America Online Root Certification Authority 1
 subject= /C=US/O=America Online Inc./CN=America Online Root Certification Authority 2
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G2
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G3
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G2
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G3
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Trusted Root G4
 subject= /C=US/O=Digital Signature Trust Co./CN=Baltimore EZ by DST/mail=ca@digsigtrust.com
 subject= /C=US/O=Digital Signature Trust Co./OU=DST (ANX Network) CA
 subject= /C=US/O=Digital Signature Trust Co./OU=DST-Entrust GTI CA
@@ -271,7 +281,6 @@ subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2008 VeriSign, 
 subject= /C=US/O=Verizon Business/OU=OmniRoot/CN=Verizon Global Root CA
 subject= /C=US/O=Wells Fargo WellsSecure/OU=Wells Fargo Bank NA/CN=WellsSecure Public Root Certificate Authority
 subject= /C=US/O=Wells Fargo WellsSecure/OU=Wells Fargo Bank NA/CN=WellsSecure Public Root Certification Authority 01 G2
-subject= /C=US/O=Wells Fargo/OU=Wells Fargo Certification Authority/CN=Wells Fargo Root Certificate Authority
 subject= /C=US/O=thawte, Inc./OU=(c) 2007 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA - G2
 subject= /C=US/O=thawte, Inc./OU=Certification Services Division/OU=(c) 2006 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA
 subject= /C=US/O=thawte, Inc./OU=Certification Services Division/OU=(c) 2008 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA - G3
@@ -294,6 +303,7 @@ subject= /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root
 subject= /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2011
 subject= /C=UY/O=ADMINISTRACION NACIONAL DE CORREOS/OU=SERVICIOS ELECTRONICOS/CN=Correo Uruguayo - Root CA
 subject= /C=UY/O=ADMINISTRACION NACIONAL DE CORREOS/OU=SERVICIOS ELECTRONICOS/CN=SERVICIOS DE CERTIFICACION - A.N.C./mail=correo_cert@correo.com.uy
+subject= /C=ZA/O=LAWtrust/OU=LAW Trusted Third Party Services PTY Ltd./CN=LAWtrust Root Certification Authority 2048
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Premium Server CA/emailAddress=premium-server@thawte.com
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Server CA/emailAddress=server-certs@thawte.com
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting/OU=Certification Services Division/CN=Thawte Personal Basic CA/emailAddress=personal-basic@thawte.com
@@ -309,6 +319,7 @@ subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root CA 2
 subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root EV CA 2
 subject= /C=ch/O=admin/OU=Services/OU=Certification Authorities/CN=Admin-Root-CA
 subject= /C=es/O=Servicio de Certificacion del Colegio de Registradores (SCR)/OU=Certificado Propio/OU=Certificado Raiz/CN=Certificado de la Clave Principal/street=Principe de Vergara 72 28006 Madrid/emailAddress=scr@registradores.org
+subject= /C=my/O=TM/OU=TM Applied Business Certification Authority/CN=TM Applied Business Root Certificate
 subject= /C=si/O=state-institutions/OU=sigen-ca
 subject= /C=si/O=state-institutions/OU=sigov-ca
 subject= /C=us/O=U.S. Government/OU=FBCA/CN=Common Policy
@@ -320,6 +331,7 @@ subject= /CN=AC1 RAIZ MTIN/serialNumber=S2819001E/OU=PRESTADOR DE SERVICIOS DE C
 subject= /CN=ACCVRAIZ1/OU=PKIACCV/O=ACCV/C=ES
 subject= /CN=ACEDICOM Root/OU=PKI/O=EDICOM/C=ES
 subject= /CN=Atos TrustedRoot 2011/O=Atos/C=DE
+subject= /CN=Autoridad Certificadora Ra\xC3\xADz Nacional de Uruguay/O=AGESIC/C=UY
 subject= /CN=Autoridad de Certificacion Raiz del Estado Venezolano/C=VE/L=Caracas/ST=Distrito Capital/O=Sistema Nacional de Certificacion Electronica/OU=Superintendencia de Servicios de Certificacion Electronica/emailAddress=acraiz@suscerte.gob.ve
 subject= /CN=ComSign Advanced Security CA
 subject= /CN=ComSign CA/O=ComSign/C=IL
