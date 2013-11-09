@@ -53,7 +53,10 @@ More information:
 
 - http://technet.microsoft.com/en-us/library/cc751157.aspx
 
-Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**. Actual root certificates fetched using **fetch-microsoft-certs.sh**.
+Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**,
+producing a JSON file called **authroot.json**. Actual root certificates
+fetched using the contents of the JSON file by **fetch-microsoft-certs.sh**. EV
+OIDs are not yet extracted.
 
 A snapshot of trusted root certificates can also be found in
 **xfiles/microsoft-2012-12.xlsx**.
