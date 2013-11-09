@@ -37,6 +37,9 @@ files using **split-bundle.pl**. EV OIDs extracted using **extract-osx-ev-pl**.
 - Root CA: /System/Library/Keychains/SystemRootCertificates.keychain
 - EV status: /System/Library/Keychains/EVRoots.plist
 
+Apple publish a [list of trusted root certificates for iOS](http://support.apple.com/kb/ht5012), but as this list does not include full certificate data (including public keys) it cannot be used by CATT.
+
+
 ### Mozilla
 
 - https://www.mozilla.org/projects/security/certs/policy/
