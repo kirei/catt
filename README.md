@@ -58,7 +58,7 @@ producing a JSON file called **authroot.json**. Actual root certificates
 fetched using the contents of the JSON file by **fetch-microsoft-certs.sh**. EV
 OIDs are not yet extracted.
 
-A snapshot of trusted root certificates can also be found in
+A ancient snapshot of trusted root certificates can also be found in
 **xfiles/microsoft-2012-12.xlsx**.
 
 - http://social.technet.microsoft.com/wiki/contents/articles/3281.introduction-to-the-microsoft-root-certificate-program.aspx
