@@ -49,7 +49,7 @@ import json
 #-------------------------------------------------------------------
 # Constants.
 #-------------------------------------------------------------------
-MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/manager/ssl/src/nsIdentityChecking.cpp?raw=1"
+MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/certverifier/ExtendedValidation.cpp?raw=1"
 
 
 #-------------------------------------------------------------------
@@ -109,6 +109,8 @@ def extract_ev_data(url, verbose):
     for line in html_lines:
         if in_cert == 1 and "}" in line:
             in_cert = False
+            if verbose:
+                print "Out of cert."
             tmp_db[key] = tmp_list
             if verbose:
                 print "Extracted cert lines for cert %d:" % key
@@ -117,13 +119,19 @@ def extract_ev_data(url, verbose):
 
         if in_cert == 1:
             tmp_list.append(line.strip())
-        
-        if in_struct == 1 and "{" in line:
+            if verbose:
+                print "cert line extracted: ", line.strip()
+                
+        if in_struct and not in_cert and "{" in line:
             in_cert = True
+            if verbose:
+                print "In cert."
             tmp_list = []
             
         if struct_name in line:
             in_struct = True
+            if verbose:
+                print "Mozilla nsMyTrustedEVInfo found."
         elif in_struct == 1 and "};" in line:
             in_struct = False
 
@@ -131,6 +139,24 @@ def extract_ev_data(url, verbose):
         print "\nExtracted certs:"
         print tmp_db
         print
+
+        
+    # Remove any test certs.
+    test_cert_CN = "XPCShell EV Testing (untrustworthy) CA"
+    test_cert_found = False
+    test_cert_id = 0
+    for key in tmp_db:
+        raw_cert = tmp_db[key]
+        for cert_element in raw_cert:
+            if test_cert_CN in cert_element:
+                test_cert_found = True
+                test_cert_id = key
+                if verbose:
+                    print "Found test cert!"
+                    print raw_cert
+    if test_cert_found:
+        tmp_db.pop(test_cert_id, None)
+
 
     # Secondary parser. Scans through the db with extracted certs
     # and builds a new db with cleaned up data containing OIDs, fingerprints
