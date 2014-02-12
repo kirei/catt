@@ -185,17 +185,14 @@ def extract_ev_data(url, verbose):
         test_cert = False
         tmp_info = tmp_list[0]
         tmp_oid = (tmp_list[1])[1:-2]
-        tmp_fingerprint = (((tmp_list[4])[1:-2]).replace(':', '')).lower()
+        tmp_fingerprint = (((tmp_list[4])[2:-3]).replace(', ', '')).lower()
+        tmp_fingerprint2 = tmp_fingerprint.replace('0x', '')
 
-        if ("testing EV signature" in tmp_info) or\
-               ("Sample Certification Authority" in tmp_info):
-            pass
-        else:
-            extracted_db[key] = {}
-            extracted_db[key]['info'] = tmp_info
-            extracted_db[key]['oid'] = tmp_oid
-            extracted_db[key]['fingerprint'] = tmp_fingerprint
-            key += 1
+        extracted_db[key] = {}
+        extracted_db[key]['info'] = tmp_info
+        extracted_db[key]['oid'] = tmp_oid
+        extracted_db[key]['fingerprint'] = tmp_fingerprint2
+        key += 1
 
     if verbose:
         print "\nExtracted database:"
