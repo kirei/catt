@@ -105,35 +105,38 @@ def extract_ev_data(url, verbose):
     in_struct = False
     in_cert = False
     key = 0
+    tmp_list = []
     tmp_db = {}
-    for line in html_lines:
-        if in_cert == 1 and "}" in line:
-            in_cert = False
-            if verbose:
-                print "Out of cert."
-            tmp_db[key] = tmp_list
-            if verbose:
-                print "Extracted cert lines for cert %d:" % key
-                print tmp_list
-            key += 1
 
-        if in_cert == 1:
+    for line in html_lines:        
+        if in_cert and in_struct:
             tmp_list.append(line.strip())
-            if verbose:
-                print "cert line extracted: ", line.strip()
-                
-        if in_struct and not in_cert and "{" in line:
-            in_cert = True
-            if verbose:
-                print "In cert."
-            tmp_list = []
             
+        if in_struct and "};" in line:
+            in_struct = False
+            if verbose:
+                print "End of nsMyTrustedEVInfo struct detected."
+
         if struct_name in line:
             in_struct = True
             if verbose:
-                print "Mozilla nsMyTrustedEVInfo found."
-        elif in_struct == 1 and "};" in line:
-            in_struct = False
+                print "Found the nsMyTrustedEVInfo struct with all cert structs."
+
+        if in_cert and line[2] == "}":
+            in_cert = False
+            tmp_list.pop()  # Remove trailing bracket.
+            tmp_db[key] = tmp_list
+            key += 1
+            if verbose:
+                print "End of cert detected."
+                print "Extracted lines for the cert:"
+                print tmp_list
+
+        if in_struct and line[2] == "{":
+            in_cert = True
+            tmp_list = []
+            if verbose:
+                print "Start of new cert found."
 
     if verbose:
         print "\nExtracted certs:"
