@@ -143,7 +143,6 @@ def extract_ev_data(url, verbose):
         print tmp_db
         print
 
-        
     # Remove any test certs.
     test_cert_CN = "XPCShell EV Testing (untrustworthy) CA"
     test_cert_found = False
@@ -159,6 +158,20 @@ def extract_ev_data(url, verbose):
                     print raw_cert
     if test_cert_found:
         tmp_db.pop(test_cert_id, None)
+
+
+    # Merge lines with fingerprint bytes.
+    # Removes the second line after merge.
+    for key in tmp_db:
+        raw_cert = tmp_db[key]
+        for i in range(len(raw_cert)):
+            if "{" in raw_cert[i]:
+                del_index = (i + 1)
+                raw_cert[i] = raw_cert[i] + " " + raw_cert[(i + 1)]
+                if verbose:
+                    print "Fingerprint bytes:"
+                    print raw_cert[i]
+        del raw_cert[del_index]
 
 
     # Secondary parser. Scans through the db with extracted certs
