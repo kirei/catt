@@ -15,4 +15,4 @@ if [ -f $BUNDLE ]; then
 	rm -f $BUNDLE
 fi
 
-python `$dirname $0`/extract_mozilla_ev_data.py -f json -o $EV
+python `dirname $0`/extract-mozilla-ev.py -f json | json_pp > $EV
