@@ -49,7 +49,7 @@ import json
 #-------------------------------------------------------------------
 # Constants.
 #-------------------------------------------------------------------
-MOZ_SOURCE_URL = "https://hg.mozilla.org/mozilla-central/raw-file/2dc56ee0e0e5/security/certverifier/ExtendedValidation.cpp"
+MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/certverifier/ExtendedValidation.cpp?raw=1"
 
 
 #-------------------------------------------------------------------
