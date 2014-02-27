@@ -5,7 +5,8 @@
 # ios_parser.py
 # -------------
 # Simple Python program that extracts and parses certs for iOS
-# published by Apple.
+# published by Apple. Note that we don't verify that the extracted
+# certs are in fact the ones used in iOS.
 #
 #
 # Author:  Joachim Strombergson
