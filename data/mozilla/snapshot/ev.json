@@ -2,256 +2,271 @@
    "33" : {
       "info" : "// CN=TC TrustCenter Universal CA III,OU=TC TrustCenter Universal CA,O=TC TrustCenter GmbH,C=DE",
       "oid" : "1.2.276.0.44.1.1.1.4",
-      "fingerprint" : "9656cd7b57969895d0e141466806fbb8c6110687"
+      "fingerprint" : "309b4a87f6ca56c93169aaa99c6d988854d7892bd5"
    },
    "32" : {
       "info" : "// CN=Global Chambersign Root - 2008,O=AC Camerfirma S.A.,serialNumber=A82743287,L=Madrid (see current address at www.camerfirma.com/address),C=EU",
       "oid" : "1.3.6.1.4.1.17326.10.8.12.1.2",
-      "fingerprint" : "4abdeeec950d359c89aec752a12c5b29f6d6aa0c"
+      "fingerprint" : "136335439334a7698016a0d324de72284e079d7b52"
    },
    "21" : {
       "info" : "// CN=DigiCert High Assurance EV Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US",
       "oid" : "2.16.840.1.114412.2.1",
-      "fingerprint" : "5fb7ee0633e259dbad0c4c9ae6d38f1a61c7dc25"
+      "fingerprint" : "7431e5f4c3c1ce4690774f0b61e05440883ba9a01e"
    },
    "7" : {
       "info" : "// CN=GeoTrust Primary Certification Authority,O=GeoTrust Inc.,C=US",
       "oid" : "1.3.6.1.4.1.14370.1.6",
-      "fingerprint" : "323c118e1bf7b8b65254e2e2100dd6029037f096"
+      "fingerprint" : "37d51006c512eaab626421f1ec8c92013fc5f82ae9"
    },
    "26" : {
       "info" : "// CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2",
       "oid" : "1.3.6.1.4.1.4146.1.1",
-      "fingerprint" : "75e0abb6138512271c04f85fddde38e4b7242efe"
+      "fingerprint" : "ca42dd41745fd0b81eb902362cf9d8bf719da1bd1b"
    },
    "17" : {
       "info" : "// OU=Go Daddy Class 2 Certification Authority,O=\\\"The Go Daddy Group, Inc.\\\",C=US",
       "oid" : "2.16.840.1.114413.1.7.23.3",
-      "fingerprint" : "2796bae63f1801e277261ba0d77770028f20eee4"
+      "fingerprint" : "c3846bf24b9e93ca64274c0ec67c1ecc5e024ffcac"
    },
    "2" : {
       "info" : "// CN=SwissSign Gold CA - G2,O=SwissSign AG,C=CH",
       "oid" : "2.16.756.1.89.1.2.1.1",
-      "fingerprint" : "d8c5388ab7301b1b6ed47ae645253a6f9f1a2761"
+      "fingerprint" : "62dd0be9b9f50a163ea0f8e75c053b1eca57ea55c8"
    },
    "1" : {
       "info" : "// CN=Cybertrust Global Root,O=Cybertrust, Inc",
       "oid" : "1.3.6.1.4.1.6334.1.100.1",
-      "fingerprint" : "5f43e5b1bff8788cac1cc7ca4a9ac6222bcc34c6"
+      "fingerprint" : "960adf0063e96356750c2965dd0a0867da0b9cbd6e"
    },
    "18" : {
       "info" : "// CN=Go Daddy Root Certificate Authority - G2,O=\"GoDaddy.com, Inc.\",L=Scottsdale,ST=Arizona,C=US",
       "oid" : "2.16.840.1.114413.1.7.23.3",
-      "fingerprint" : "47beabc922eae80e78783462a79f45c254fde68b"
+      "fingerprint" : "45140b3247eb9cc8c5b4f0d7b53091f73292089e6e"
    },
    "30" : {
       "info" : "// CN=Class 2 Primary CA,O=Certplus,C=FR",
       "oid" : "1.3.6.1.4.1.22234.2.5.2.3.1",
-      "fingerprint" : "74207441729cdd92ec7931d823108dc28192e2bb"
+      "fingerprint" : "0f993c8aef97baaf5687140ed59ad1821bb4afacf0"
    },
    "16" : {
       "info" : "// CN=UTN-USERFirst-Hardware,OU=http://www.usertrust.com,O=The USERTRUST Network,L=Salt Lake City,ST=UT,C=US",
       "oid" : "1.3.6.1.4.1.6449.1.2.1.5.1",
-      "fingerprint" : "0483ed3399ac3608058722edbc5e4600e3bef9d7"
+      "fingerprint" : "6ea54741d004667eed1b4816634aa3a79e6e4b9695"
    },
    "44" : {
       "info" : "// CN=China Internet Network Information Center EV Certificates Root,O=China Internet Network Information Center,C=CN",
       "oid" : "1.3.6.1.4.1.29836.1.10",
-      "fingerprint" : "4f99aa93fb2bd13726a1994ace7ff005f2935d1e"
+      "fingerprint" : "1c01c6f4dbb2fefc22558b2bca32563f49844acfc3"
    },
    "27" : {
       "info" : "// CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R3",
       "oid" : "1.3.6.1.4.1.4146.1.1",
-      "fingerprint" : "d69b561148f01c77c54578c10926df5b856976ad"
+      "fingerprint" : "cbb522d7b7f127ad6a0113865bdf1cd4102e7d0759"
    },
    "25" : {
       "info" : "// CN=GlobalSign Root CA,OU=Root CA,O=GlobalSign nv-sa,C=BE",
       "oid" : "1.3.6.1.4.1.4146.1.1",
-      "fingerprint" : "b1bc968bd4f49d622aa89a81f2150152a41d829c"
+      "fingerprint" : "ebd41040e4bb3ec742c9e381d31ef2a41a48b6685c"
    },
    "28" : {
       "info" : "// CN=Buypass Class 3 CA 1,O=Buypass AS-983163327,C=NO",
       "oid" : "2.16.578.1.26.1.3.3",
-      "fingerprint" : "61573a11df0ed87ed5926522ead056d744b32371"
+      "fingerprint" : "b7b12b171f821daa990cd0fe5087b128448ba8e518"
    },
    "40" : {
       "info" : "// CN=Izenpe.com,O=IZENPE S.A.,C=ES",
       "oid" : "1.3.6.1.4.1.14777.6.1.2",
-      "fingerprint" : "2f783d255218a74a653971b52ca29c45156fe919"
+      "fingerprint" : "2530cc8e98321502bad96f9b1fba1b099e2d299e0f"
    },
    "20" : {
       "info" : "// CN=Starfield Root Certificate Authority - G2,O=\"Starfield Technologies, Inc.\",L=Scottsdale,ST=Arizona,C=US",
       "oid" : "2.16.840.1.114414.1.7.23.3",
-      "fingerprint" : "b51c067cee2b0c3df855ab2d92f4fe39d4e70f0e"
+      "fingerprint" : "2ce1cb0bf9d2f9e102993fbe215152c3b2dd0cabde"
    },
    "14" : {
       "info" : "// CN=AddTrust External CA Root,OU=AddTrust External TTP Network,O=AddTrust AB,C=SE",
       "oid" : "1.3.6.1.4.1.6449.1.2.1.5.1",
-      "fingerprint" : "02faf3e291435468607857694df5e45b68851868"
+      "fingerprint" : "687fa451382278fff0c8b11f8d43d576671c6eb2bc"
    },
    "49" : {
       "info" : "// CN=GeoTrust Primary Certification Authority - G3,OU=(c) 2008 GeoTrust Inc. - For authorized use only,O=GeoTrust Inc.,C=US",
       "oid" : "1.3.6.1.4.1.14370.1.6",
-      "fingerprint" : "039eedb80be7a03c6953893b20d2d9323a4c2afd"
+      "fingerprint" : "b478b812250df878635c2aa7ec7d155eaa625ee829"
    },
    "24" : {
       "info" : "// CN=Entrust Root Certification Authority,OU=\"(c) 2006 Entrust, Inc.\",OU=www.entrust.net/CPS is incorporated by reference,O=\"Entrust, Inc.\",C=US",
       "oid" : "2.16.840.1.114028.10.1.2",
-      "fingerprint" : "b31eb1b740e36c8402dadc37d44df5d4674952f9"
+      "fingerprint" : "73c176434f1bc6d5adf45b0e76e727287c8de57616"
    },
    "10" : {
       "info" : "// CN=SecureTrust CA,O=SecureTrust Corporation,C=US",
       "oid" : "2.16.840.1.114404.1.1.2.4.1",
-      "fingerprint" : "8782c6c304353bcfd29692d2593e7d44d934ff11"
+      "fingerprint" : "f1c1b50ae5a20dd8030ec9f6bc24823dd367b52557"
    },
    "31" : {
       "info" : "// CN=Chambers of Commerce Root - 2008,O=AC Camerfirma S.A.,serialNumber=A82743287,L=Madrid (see current address at www.camerfirma.com/address),C=EU",
       "oid" : "1.3.6.1.4.1.17326.10.14.2.1.2",
-      "fingerprint" : "786a74ac76ab147f9c6a3050ba9ea87efe9ace3c"
+      "fingerprint" : "063e4afac491dfd332f3089b8542e94617d893d7fe"
    },
    "35" : {
       "info" : "// CN=AffirmTrust Networking,O=AffirmTrust,C=US",
       "oid" : "1.3.6.1.4.1.34697.2.2",
-      "fingerprint" : "293621028b20ed02f566c532d1d6ed909f45002f"
+      "fingerprint" : "0a81ec5a929777f145904af38d5d509f66b5e2c58f"
    },
    "11" : {
       "info" : "// CN=Secure Global CA,O=SecureTrust Corporation,C=US",
       "oid" : "2.16.840.1.114404.1.1.2.4.1",
-      "fingerprint" : "3a44735ae581901f248661461e3b9cc45ff53a1b"
+      "fingerprint" : "4200f5043ac8590ebb527d209ed1503029fbcbd41c"
+   },
+   "53" : {
+      "info" : "// CN = E-Tugra Certification Authority, OU = E-Tugra Sertifikasyon Merkezi, O = E-Tuğra EBG Bilişim Teknolojileri ve Hizmetleri A.Ş., L = Ankara, C = TR",
+      "oid" : "2.16.792.3.0.4.1.1.4",
+      "fingerprint" : "b0bfd52bb0d7d9bd92bf5d4dc13da255c02c542f37"
    },
    "48" : {
       "info" : "// CN=VeriSign Universal Root Certification Authority,OU=\"(c) 2008 VeriSign, Inc. - For authorized use only\",OU=VeriSign Trust Network,O=\"VeriSign, Inc.\",C=US",
       "oid" : "2.16.840.1.113733.1.7.23.6",
-      "fingerprint" : "3679ca35668772304d30a5fb873b0fa77bb70d54"
+      "fingerprint" : "2399561127a57125de8cefea610ddf2fa078b5c806"
    },
    "42" : {
       "info" : "// CN=T-TeleSec GlobalRoot Class 3,OU=T-Systems Trust Center,O=T-Systems Enterprise Services GmbH,C=DE",
       "oid" : "1.3.6.1.4.1.7879.13.24.1",
-      "fingerprint" : "55a6723ecbf2eccdc3237470199d2abe11e381d1"
+      "fingerprint" : "fd73dad31c644ff1b43bef0ccdda96710b9cd9875e"
    },
    "22" : {
       "info" : "// CN=QuoVadis Root CA 2,O=QuoVadis Limited,C=BM",
       "oid" : "1.3.6.1.4.1.8024.0.2.100.1.2",
-      "fingerprint" : "ca3afbcf1240364b44b216208880483919937cf7"
+      "fingerprint" : "85a0dd7dd720adb7ff05f83d542b209dc7ff4528f7"
    },
    "46" : {
       "info" : "// CN=D-TRUST Root Class 3 CA 2 EV 2009,O=D-Trust GmbH,C=DE",
       "oid" : "1.3.6.1.4.1.4788.2.202.1",
-      "fingerprint" : "96c91b0b95b4109842fad0d82279fe60fab91683"
+      "fingerprint" : "eec5496b988ce98625b934092eec2908bed0b0f316"
    },
    "0" : {
       "info" : "// OU=Security Communication EV RootCA1,O=\"SECOM Trust Systems CO.,LTD.\",C=JP",
       "oid" : "1.2.392.200091.100.721.1",
-      "fingerprint" : "feb8c432dcf9769aceae3dd8908ffd288665647d"
+      "fingerprint" : "a22dba681e97376e2d397d728aae3a9b6296b9fdba"
    },
    "13" : {
       "info" : "// CN=COMODO Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
       "oid" : "1.3.6.1.4.1.6449.1.2.1.5.1",
-      "fingerprint" : "6631bf9ef74f9eb6c9d5a60cba6abed1f7bdef7b"
+      "fingerprint" : "0c2cd63df7806fa399ede809116b575bf87989f065"
    },
    "23" : {
       "info" : "// CN=Network Solutions Certificate Authority,O=Network Solutions L.L.C.,C=US",
       "oid" : "1.3.6.1.4.1.782.1.2.1.8.1",
-      "fingerprint" : "74f8a3c3efe7b390064b83903c21646020e5dfce"
+      "fingerprint" : "15f0ba00a3ac7af3ac884c072b1011a077bd77c097"
    },
    "29" : {
       "info" : "// CN=Buypass Class 3 Root CA,O=Buypass AS-983163327,C=NO",
       "oid" : "2.16.578.1.26.1.3.3",
-      "fingerprint" : "dafaf7fa6684ec068f1450bdc7c281a5bca96457"
+      "fingerprint" : "edf7ebbca27a2a384d387b7d4010c666e2edb4843e"
    },
    "6" : {
       "info" : "// CN=VeriSign Class 3 Public Primary Certification Authority - G5,OU=\"(c) 2006 VeriSign, Inc. - For authorized use only\",OU=VeriSign Trust Network,O=\"VeriSign, Inc.\",C=US",
       "oid" : "2.16.840.1.113733.1.7.23.6",
-      "fingerprint" : "4eb6d578499b1ccf5f581ead56be3d9b6744a5e5"
+      "fingerprint" : "9acfab7e43c8d880d06b262a94deeee4b4659989c3"
    },
    "50" : {
       "info" : "// CN=thawte Primary Root CA - G3,OU=\"(c) 2008 thawte, Inc. - For authorized use only\",OU=Certification Services Division,O=\"thawte, Inc.\",C=US",
       "oid" : "2.16.840.1.113733.1.7.48.1",
-      "fingerprint" : "f18b538d1be903b6a6f056435b171589caf36bf2"
+      "fingerprint" : "4b03f45807ad70f21bfc2cae71c9fde4604c064cf5"
    },
    "39" : {
       "info" : "// CN=Izenpe.com,O=IZENPE S.A.,C=ES",
       "oid" : "1.3.6.1.4.1.14777.6.1.1",
-      "fingerprint" : "2f783d255218a74a653971b52ca29c45156fe919"
+      "fingerprint" : "2530cc8e98321502bad96f9b1fba1b099e2d299e0f"
    },
    "36" : {
       "info" : "// CN=AffirmTrust Premium,O=AffirmTrust,C=US",
       "oid" : "1.3.6.1.4.1.34697.2.3",
-      "fingerprint" : "d8a6332ce0036fb185f6634f7d6a066526322827"
+      "fingerprint" : "70a73f7f376b60074248904534b11482d5bf0e698e"
    },
    "3" : {
       "info" : "// CN=StartCom Certification Authority,OU=Secure Digital Certificate Signing,O=StartCom Ltd.,C=IL",
       "oid" : "1.3.6.1.4.1.23223.1.1.1",
-      "fingerprint" : "3e2bf7f2031b96f38ce6c4d8a85d3e2d58476a0f"
+      "fingerprint" : "c766a9bef2d4071c863a31aa4920e813b2d198608c"
+   },
+   "51" : {
+      "info" : "// CN = Autoridad de Certificacion Firmaprofesional CIF A62634068, C = ES",
+      "oid" : "1.3.6.1.4.1.13177.10.1.3.10",
+      "fingerprint" : "04048028bf1f2864d48f9ad4d83294366a82885655"
    },
    "9" : {
       "info" : "// CN=XRamp Global Certification Authority,O=XRamp Security Services Inc,OU=www.xrampsecurity.com,C=US",
       "oid" : "2.16.840.1.114404.1.1.2.4.1",
-      "fingerprint" : "b80186d1eb9c86a54104cf3054f34c52b7e558c6"
+      "fingerprint" : "cecddc905099d8dadfc5b1d209b737cbe2c18cfb2c"
    },
    "41" : {
       "info" : "// CN=A-Trust-nQual-03,OU=A-Trust-nQual-03,O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH,C=AT",
       "oid" : "1.2.40.0.17.1.22",
-      "fingerprint" : "d3c063f219ed073e34ad5d750b327629ffd59af2"
+      "fingerprint" : "793cbf4559b9fde38ab22df16869f69881ae14c4b0"
    },
    "12" : {
       "info" : "// CN=COMODO ECC Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
       "oid" : "1.3.6.1.4.1.6449.1.2.1.5.1",
-      "fingerprint" : "9f744e9f2b4dbaec0f312c50b6563b8e2d93c311"
+      "fingerprint" : "1793927a0614549789adce2f8f34f7f0b66d0f3ae3"
    },
    "47" : {
       "info" : "// CN=Swisscom Root EV CA 2,OU=Digital Certificate Services,O=Swisscom,C=ch",
       "oid" : "2.16.756.1.83.21.0",
-      "fingerprint" : "e7a19029d3d552dc0d0fc692d3ea880d152e1a6b"
+      "fingerprint" : "d95fea3ca4eedce74cd76e75fc6d1ff62c441f0fa8"
    },
    "15" : {
       "info" : "// CN=UTN - DATACorp SGC,OU=http://www.usertrust.com,O=The USERTRUST Network,L=Salt Lake City,ST=UT,C=US",
       "oid" : "1.3.6.1.4.1.6449.1.2.1.5.1",
-      "fingerprint" : "58119f0e128287ea50fdd987456f4f78dcfad6d4"
+      "fingerprint" : "85fb2f91dd12275a0145b636534f84024ad68b69b8"
+   },
+   "52" : {
+      "info" : "// CN = TWCA Global Root CA, OU = Root CA, O = TAIWAN-CA, C = TW",
+      "oid" : "1.3.6.1.4.1.40869.1.1.22.3",
+      "fingerprint" : "59769007f7685d0fcd50872f9f95d5755a5b2b457d"
    },
    "38" : {
       "info" : "// CN=Certum Trusted Network CA,OU=Certum Certification Authority,O=Unizeto Technologies S.A.,C=PL",
       "oid" : "1.2.616.1.113527.2.5.1.1",
-      "fingerprint" : "07e032e020b72c3f192f0628a2593a19a70f069e"
+      "fingerprint" : "5c58468d55f58e497e743982d2b50010b6d165374a"
    },
    "8" : {
       "info" : "// CN=thawte Primary Root CA,OU=\"(c) 2006 thawte, Inc. - For authorized use only\",OU=Certification Services Division,O=\"thawte, Inc.\",C=US",
       "oid" : "2.16.840.1.113733.1.7.48.1",
-      "fingerprint" : "91c6d6ee3e8ac86384e548c299295c756c817b81"
+      "fingerprint" : "8d722f81a9c113c0791df136a2966db26c950a971d"
    },
    "4" : {
       "info" : "// CN=StartCom Certification Authority,OU=Secure Digital Certificate Signing,O=StartCom Ltd.,C=IL",
       "oid" : "1.3.6.1.4.1.23223.1.1.1",
-      "fingerprint" : "a3f1333fe242bfcfc5d14e8f394298406810d1a0"
+      "fingerprint" : "e17890ee09a3fbf4f48b9c414a17d637b7a50647e9"
    },
    "34" : {
       "info" : "// CN=AffirmTrust Commercial,O=AffirmTrust,C=US",
       "oid" : "1.3.6.1.4.1.34697.2.1",
-      "fingerprint" : "f9b5b632455f9cbeec575f80dce96e2cc7b278b7"
+      "fingerprint" : "0376ab1d54c5f9803ce4b2e201a0ee7eef7b57b636"
    },
    "45" : {
       "info" : "// CN=TWCA Root Certification Authority,OU=Root CA,O=TAIWAN-CA,C=TW",
       "oid" : "1.3.6.1.4.1.40869.1.1.22.3",
-      "fingerprint" : "cf9e876dd3ebfc422697a3b5a37aa076a9062348"
+      "fingerprint" : "bfd88fe1101c41ae3e801bf8be56350ee9bad1a6b9"
    },
    "37" : {
       "info" : "// CN=AffirmTrust Premium ECC,O=AffirmTrust,C=US",
       "oid" : "1.3.6.1.4.1.34697.2.4",
-      "fingerprint" : "b8236b002f1d16865301556c11a437caebffc3bb"
+      "fingerprint" : "bd71fdf6da97e4cf62d1647add2581b07d79adf839"
    },
    "43" : {
       "info" : "// CN=TURKTRUST Elektronik Sertifika Hizmet Saglayicisi,O=TURKTRUST Bilgi Illetisim ve Bilisim Guvenligi Hizmetleri A.S.,C=TR",
       "oid" : "2.16.792.3.0.3.1.1.5",
-      "fingerprint" : "f17f6fb631dc99e3a3c87ffe1cf1811088d96033"
+      "fingerprint" : "978cd966f2faa07ba7aa9500d9c02e9d77f2cdada6"
    },
    "19" : {
       "info" : "// OU=Starfield Class 2 Certification Authority,O=\\\"Starfield Technologies, Inc.\\\",C=US",
       "oid" : "2.16.840.1.114414.1.7.23.3",
-      "fingerprint" : "ad7e1c28b064ef8f6003402014c3d0e3370eb58a"
+      "fingerprint" : "1465fa205397b876faa6f0a9958e5590e40fcc7faa"
    },
    "5" : {
       "info" : "// CN=StartCom Certification Authority G2,O=StartCom Ltd.,C=IL",
       "oid" : "1.3.6.1.4.1.23223.1.1.1",
-      "fingerprint" : "31f1fd68226320eec63b3f9dea4a3e537c7c3917"
+      "fingerprint" : "c7ba6567de93a798ae1faa791e712d378fae1f93c4"
    }
 }

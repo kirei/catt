@@ -7,8 +7,12 @@ subject= /C=CH/O=SwissSign AG/CN=SwissSign Gold CA - G2
 subject= /C=CH/O=SwissSign AG/CN=SwissSign Silver CA - G2
 subject= /C=CH/O=WISeKey/OU=Copyright (c) 2005/OU=OISTE Foundation Endorsed/CN=OISTE WISeKey Global Root GA CA
 subject= /C=CN/O=CNNIC/CN=CNNIC ROOT
+subject= /C=CN/O=China Internet Network Information Center/CN=China Internet Network Information Center EV Certificates Root
 subject= /C=CO/O=Sociedad Cameral de Certificaci\xC3\xB3n Digital - Certic\xC3\xA1mara S.A./CN=AC Ra\xC3\xADz Certic\xC3\xA1mara S.A.
+subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root Class 3 CA 2 2009
+subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root Class 3 CA 2 EV 2009
 subject= /C=DE/O=Deutsche Telekom AG/OU=T-TeleSec Trust Center/CN=Deutsche Telekom Root CA 2
+subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 2
 subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 3
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 2 CA/CN=TC TrustCenter Class 2 CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 3 CA/CN=TC TrustCenter Class 3 CA II
@@ -67,10 +71,14 @@ subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Class 1 CA Root
 subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Public CA Root
 subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Qualified CA Root
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig
+subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R1
+subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R2
+subject= /C=TR/L=Ankara/O=E-Tu\xC4\x9Fra EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./OU=E-Tugra Sertifikasyon Merkezi/CN=E-Tugra Certification Authority
 subject= /C=TR/L=Gebze - Kocaeli/O=T\xC3\xBCrkiye Bilimsel ve Teknolojik Ara\xC5\x9Ft\xC4\xB1rma Kurumu - T\xC3\x9CB\xC4\xB0TAK/OU=Ulusal Elektronik ve Kriptoloji Ara\xC5\x9Ft\xC4\xB1rma Enstit\xC3\xBCs\xC3\xBC - UEKAE/OU=Kamu Sertifikasyon Merkezi/CN=T\xC3\x9CB\xC4\xB0TAK UEKAE K\xC3\xB6k Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1 - S\xC3\xBCr\xC3\xBCm 3
 subject= /C=TR/O=Elektronik Bilgi Guvenligi A.S./CN=e-Guven Kok Elektronik Sertifika Hizmet Saglayicisi
 subject= /C=TW/O=Chunghwa Telecom Co., Ltd./OU=ePKI Root Certification Authority
 subject= /C=TW/O=Government Root Certification Authority
+subject= /C=TW/O=TAIWAN-CA/OU=Root CA/CN=TWCA Global Root CA
 subject= /C=TW/O=TAIWAN-CA/OU=Root CA/CN=TWCA Root Certification Authority
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Commercial
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Networking
@@ -125,10 +133,15 @@ subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.user
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Premium Server CA/emailAddress=premium-server@thawte.com
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Server CA/emailAddress=server-certs@thawte.com
 subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root CA 1
+subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root CA 2
+subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root EV CA 2
+subject= /CN=ACCVRAIZ1/OU=PKIACCV/O=ACCV/C=ES
 subject= /CN=ACEDICOM Root/OU=PKI/O=EDICOM/C=ES
+subject= /CN=Atos TrustedRoot 2011/O=Atos/C=DE
 subject= /CN=ComSign Secured CA/O=ComSign/C=IL
 subject= /CN=EBG Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/O=EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./C=TR
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=ANKARA/O=(c) 2005 T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E.
+subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Aral\xC4\xB1k 2007
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Kas\xC4\xB1m 2005
 subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 1 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
 subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 2 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
@@ -137,6 +150,8 @@ subject= /O=Cybertrust, Inc/CN=Cybertrust Global Root
 subject= /O=Digital Signature Trust Co./CN=DST Root CA X3
 subject= /O=Entrust.net/OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Certification Authority (2048)
 subject= /O=RSA Security Inc/OU=RSA Security 2048 V3
+subject= /O=TeliaSonera/CN=TeliaSonera Root CA v1
 subject= /OU=GlobalSign Root CA - R2/O=GlobalSign/CN=GlobalSign
 subject= /OU=GlobalSign Root CA - R3/O=GlobalSign/CN=GlobalSign
+subject= /emailAddress=contacto@procert.net.ve/L=Chacao/ST=Miranda/OU=Proveedor de Certificados PROCERT/O=Sistema Nacional de Certificacion Electronica/C=VE/CN=PSCProcert
 subject= /emailAddress=pki@sk.ee/C=EE/O=AS Sertifitseerimiskeskus/CN=Juur-SK
