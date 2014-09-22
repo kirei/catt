@@ -34,21 +34,21 @@ use Getopt::Std;
 use MIME::Base64;
 use LWP::UserAgent;
 use strict;
-use vars qw($opt_b $opt_d $opt_f $opt_h $opt_i $opt_l $opt_n $opt_q $opt_t $opt_u $opt_v $opt_w);
+use vars qw($opt_b $opt_d $opt_f $opt_h $opt_i $opt_l $opt_n $opt_p $opt_q $opt_s $opt_t $opt_u $opt_v $opt_w);
+use List::Util;
+use Text::Wrap;
 
 my %urls = (
   'nss' =>
-    'http://mxr.mozilla.org/nss/source/lib/ckfw/builtins/certdata.txt?raw=1',
+    'http://hg.mozilla.org/projects/nss/raw-file/tip/lib/ckfw/builtins/certdata.txt',
   'central' =>
-    'http://mxr.mozilla.org/mozilla-central/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1',
+    'http://hg.mozilla.org/mozilla-central/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt',
   'aurora' =>
-    'http://mxr.mozilla.org/mozilla-aurora/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1',
+    'http://hg.mozilla.org/releases/mozilla-aurora/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt',
   'beta' =>
-    'http://mxr.mozilla.org/mozilla-beta/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1',
+    'http://hg.mozilla.org/releases/mozilla-beta/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt',
   'release' =>
-    'http://mxr.mozilla.org/mozilla-release/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1',
-  'mozilla' =>
-    'http://mxr.mozilla.org/mozilla/source/security/nss/lib/ckfw/builtins/certdata.txt?raw=1'
+    'http://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt',
 );
 
 $opt_d = 'release';
@@ -56,13 +56,53 @@ $opt_d = 'release';
 # If the OpenSSL commandline is not in search path you can configure it here!
 my $openssl = 'openssl';
 
-my $version = '1.20';
+my $version = '1.23';
 
 $opt_w = 76; # default base64 encoded lines length
 
+# default cert types to include in the output (default is to include CAs which may issue SSL server certs)
+my $default_mozilla_trust_purposes = "SERVER_AUTH";
+my $default_mozilla_trust_levels = "TRUSTED_DELEGATOR";
+$opt_p = $default_mozilla_trust_purposes . ":" . $default_mozilla_trust_levels;
+
+my @valid_mozilla_trust_purposes = (
+  "DIGITAL_SIGNATURE",
+  "NON_REPUDIATION",
+  "KEY_ENCIPHERMENT",
+  "DATA_ENCIPHERMENT",
+  "KEY_AGREEMENT",
+  "KEY_CERT_SIGN",
+  "CRL_SIGN",
+  "SERVER_AUTH",
+  "CLIENT_AUTH",
+  "CODE_SIGNING",
+  "EMAIL_PROTECTION",
+  "IPSEC_END_SYSTEM",
+  "IPSEC_TUNNEL",
+  "IPSEC_USER",
+  "TIME_STAMPING",
+  "STEP_UP_APPROVED"
+);
+
+my @valid_mozilla_trust_levels = (
+  "TRUSTED_DELEGATOR",    # CAs
+  "NOT_TRUSTED",          # Don't trust these certs.
+  "MUST_VERIFY_TRUST",    # This explicitly tells us that it ISN'T a CA but is otherwise ok. In other words, this should tell the app to ignore any other sources that claim this is a CA.
+  "TRUSTED"               # This cert is trusted, but only for itself and not for delegates (i.e. it is not a CA).
+);
+
+my $default_signature_algorithms = $opt_s = "MD5";
+
+my @valid_signature_algorithms = (
+  "MD5",
+  "SHA1",
+  "SHA256",
+  "SHA512"
+);
+
 $0 =~ s@.*(/|\\)@@;
 $Getopt::Std::STANDARD_HELP_VERSION = 1;
-getopts('bd:fhilnqtuvw:');
+getopts('bd:fhilnp:qs:tuvw:');
 
 if(!defined($opt_d)) {
     # to make plain "-d" use not cause warnings, and actually still work
@@ -71,6 +111,8 @@ if(!defined($opt_d)) {
 
 # Use predefined URL or else custom URL specified on command line.
 my $url = ( defined( $urls{$opt_d} ) ) ? $urls{$opt_d} : $opt_d;
+
+my $curl=`curl -V`;
 
 if ($opt_i) {
   print ("=" x 78 . "\n");
@@ -87,14 +129,14 @@ if ($opt_i) {
 sub WARNING_MESSAGE() {
   if ( $opt_d =~ m/^risk$/i ) { # Long Form Warning and Exit
     print "Warning: Use of this script may pose some risk:\n";
-	print "\n";
-	print "  1) Using http is subject to man in the middle attack of certdata content\n";
-	print "  2) Default to 'release', but more recent updates may be found in other trees\n";
-	print "  3) certdata.txt file format may change, lag time to update this script\n";
-	print "  4) Generally unwise to blindly trust CAs without manual review & verification\n";
-	print "  5) Mozilla apps use additional security checks aren't represented in certdata\n";
-	print "  6) Use of this script will make a security engineer grind his teeth and\n";
-	print "     swear at you.  ;)\n";
+    print "\n";
+    print "  1) Using http is subject to man in the middle attack of certdata content\n";
+    print "  2) Default to 'release', but more recent updates may be found in other trees\n";
+    print "  3) certdata.txt file format may change, lag time to update this script\n";
+    print "  4) Generally unwise to blindly trust CAs without manual review & verification\n";
+    print "  5) Mozilla apps use additional security checks aren't represented in certdata\n";
+    print "  6) Use of this script will make a security engineer grind his teeth and\n";
+    print "     swear at you.  ;)\n";
     exit;
   } else { # Short Form Warning
     print "Warning: Use of this script may pose some risk, -d risk for more details.\n";
@@ -102,7 +144,7 @@ sub WARNING_MESSAGE() {
 }
 
 sub HELP_MESSAGE() {
-  print "Usage:\t${0} [-b] [-d<certdata>] [-f] [-i] [-l] [-n] [-q] [-t] [-u] [-v] [-w<l>] [<outputfile>]\n";
+  print "Usage:\t${0} [-b] [-d<certdata>] [-f] [-i] [-l] [-n] [-p<purposes:levels>] [-q] [-s<algorithms>] [-t] [-u] [-v] [-w<l>] [<outputfile>]\n";
   print "\t-b\tbackup an existing version of ca-bundle.crt\n";
   print "\t-d\tspecify Mozilla tree to pull certdata.txt or custom URL\n";
   print "\t\t  Valid names are:\n";
@@ -111,7 +153,15 @@ sub HELP_MESSAGE() {
   print "\t-i\tprint version info about used modules\n";
   print "\t-l\tprint license info about certdata.txt\n";
   print "\t-n\tno download of certdata.txt (to use existing)\n";
+  print wrap("\t","\t\t", "-p\tlist of Mozilla trust purposes and levels for certificates to include in output. Takes the form of a comma separated list of purposes, a colon, and a comma separated list of levels. (default: $default_mozilla_trust_purposes:$default_mozilla_trust_levels)"), "\n";
+  print "\t\t  Valid purposes are:\n";
+  print wrap("\t\t    ","\t\t    ", join( ", ", "ALL", @valid_mozilla_trust_purposes ) ), "\n";
+  print "\t\t  Valid levels are:\n";
+  print wrap("\t\t    ","\t\t    ", join( ", ", "ALL", @valid_mozilla_trust_levels ) ), "\n";
   print "\t-q\tbe really quiet (no progress output at all)\n";
+  print wrap("\t","\t\t", "-s\tcomma separated list of certificate signatures/hashes to output in plain text mode. (default: $default_signature_algorithms)\n");
+  print "\t\t  Valid signature algorithms are:\n";
+  print wrap("\t\t    ","\t\t    ", join( ", ", "ALL", @valid_signature_algorithms ) ), "\n";
   print "\t-t\tinclude plain text listing of certificates\n";
   print "\t-u\tunlink (remove) certdata.txt after processing\n";
   print "\t-v\tbe verbose and print out processed CAs\n";
@@ -126,6 +176,83 @@ sub VERSION_MESSAGE() {
 WARNING_MESSAGE() unless ($opt_q || $url =~ m/^(ht|f)tps:/i );
 HELP_MESSAGE() if ($opt_h);
 
+sub IS_IN_LIST($@) {
+  my $target = shift;
+
+  return defined(List::Util::first { $target eq $_ } @_);
+}
+
+# Parses $param_string as a case insensitive comma separated list with optional whitespace
+# validates that only allowed parameters are supplied
+sub PARSE_CSV_PARAM($$@) {
+  my $description = shift;
+  my $param_string = shift;
+  my @valid_values = @_;
+
+  my @values = map {
+    s/^\s+//;  # strip leading spaces
+    s/\s+$//;  # strip trailing spaces
+    uc $_      # return the modified string as upper case
+  } split( ',', $param_string );
+
+  # Find all values which are not in the list of valid values or "ALL"
+  my @invalid = grep { !IS_IN_LIST($_,"ALL",@valid_values) } @values;
+
+  if ( scalar(@invalid) > 0 ) {
+    # Tell the user which parameters were invalid and print the standard help message which will exit
+    print "Error: Invalid ", $description, scalar(@invalid) == 1 ? ": " : "s: ", join( ", ", map { "\"$_\"" } @invalid ), "\n";
+    HELP_MESSAGE();
+  }
+
+  @values = @valid_values if ( IS_IN_LIST("ALL",@values) );
+
+  return @values;
+}
+
+sub sha1 {
+    my ($txt)=@_;
+    my $sha1 = `$openssl dgst -sha1 $txt | cut '-d ' -f2`;
+    chomp $sha1;
+    return $sha1;
+}
+
+sub oldsha1 {
+    my ($crt)=@_;
+    my $sha1="";
+    open(C, "<$crt") || return 0;
+    while(<C>) {
+        chomp;
+        if($_ =~ /^\#\# SHA1: (.*)/) {
+            $sha1 = $1;
+            last;
+        }
+    }
+    close(C);
+    return $sha1;
+}
+
+if ( $opt_p !~ m/:/ ) {
+  print "Error: Mozilla trust identifier list must include both purposes and levels\n";
+  HELP_MESSAGE();
+}
+
+(my $included_mozilla_trust_purposes_string, my $included_mozilla_trust_levels_string) = split( ':', $opt_p );
+my @included_mozilla_trust_purposes = PARSE_CSV_PARAM( "trust purpose", $included_mozilla_trust_purposes_string, @valid_mozilla_trust_purposes );
+my @included_mozilla_trust_levels = PARSE_CSV_PARAM( "trust level", $included_mozilla_trust_levels_string, @valid_mozilla_trust_levels );
+
+my @included_signature_algorithms = PARSE_CSV_PARAM( "signature algorithm", $opt_s, @valid_signature_algorithms );
+
+sub SHOULD_OUTPUT_CERT(%) {
+  my %trust_purposes_by_level = @_;
+
+  foreach my $level (@included_mozilla_trust_levels) {
+    # for each level we want to output, see if any of our desired purposes are included
+    return 1 if ( defined( List::Util::first { IS_IN_LIST( $_, @included_mozilla_trust_purposes ) } @{$trust_purposes_by_level{$level}} ) );
+  }
+
+  return 0;
+}
+
 my $crt = $ARGV[0] || 'ca-bundle.crt';
 (my $txt = $url) =~ s@(.*/|\?.*)@@g;
 
@@ -133,8 +260,34 @@ my $stdout = $crt eq '-';
 my $resp;
 my $fetched;
 
-unless ($opt_n and -e $txt) {
-  print STDERR "Downloading '$txt' ...\n" if (!$opt_q);
+my $oldsha1= oldsha1($crt);
+
+print STDERR "SHA1 of old file: $oldsha1\n" if (!$opt_q);
+
+print STDERR "Downloading '$txt' ...\n" if (!$opt_q);
+
+if($curl && !$opt_n) {
+    my $https = $url;
+    $https =~ s/^http:/https:/;
+    printf "Get certdata over HTTPS with curl!\n", $https;
+    my $quiet = $opt_q?"-s":"";
+    my @out = `curl -w %{response_code} $quiet -O $https`;
+
+    my $code = 0;
+    if(@out) {
+        $code = $out[0];
+    }
+
+    if($code == 200) {
+        $fetched = 1;
+    }
+    else {
+        print STDERR "Failed downloading HTTPS with curl, trying HTTP with LWP\n"
+            unless $opt_q;
+    }
+}
+
+unless ($fetched || ($opt_n and -e $txt)) {
   my $ua  = new LWP::UserAgent(agent => "$0/$version");
   $ua->env_proxy();
   $resp = $ua->mirror($url, $txt);
@@ -152,7 +305,25 @@ unless ($opt_n and -e $txt) {
   }
 }
 
-my $currentdate = scalar gmtime($fetched ? $resp->last_modified : (stat($txt))[9]);
+my $filedate = $resp ? $resp->last_modified : (stat($txt))[9];
+my $datesrc = "as of";
+if(!$filedate) {
+    # mxr.mozilla.org gave us a time, hg.mozilla.org does not!
+    $filedate = time();
+    $datesrc="downloaded on";
+}
+
+# get the hash from the download file
+my $newsha1= sha1($txt);
+
+if($oldsha1 eq $newsha1) {
+    print STDERR "Downloaded file identical to previous run\'s source file. Exiting\n";
+    exit;
+}
+
+print STDERR "SHA1 of new file: $newsha1\n";
+
+my $currentdate = scalar gmtime($filedate);
 
 my $format = $opt_t ? "plain text and " : "";
 if( $stdout ) {
@@ -162,9 +333,9 @@ if( $stdout ) {
 }
 print CRT <<EOT;
 ##
-## $crt -- Bundle of CA Root Certificates
+## Bundle of CA Root Certificates
 ##
-## Certificate data from Mozilla as of: ${currentdate}
+## Certificate data from Mozilla ${datesrc}: ${currentdate}
 ##
 ## This is a bundle of X.509 certificates of public Certificate Authorities
 ## (CA). These were automatically extracted from Mozilla's root certificates
@@ -175,6 +346,9 @@ print CRT <<EOT;
 ## can be directly used with curl / libcurl / php_curl, or with
 ## an Apache+mod_ssl webserver for SSL client authentication.
 ## Just configure this file as the SSLCACertificateFile.
+##
+## Conversion done with mk-ca-bundle.pl verison $version.
+## SHA1: $newsha1
 ##
 
 EOT
@@ -209,7 +383,7 @@ while (<TXT>) {
   if ($start_of_cert && /^CKA_LABEL UTF8 \"(.*)\"/) {
     $caname = $1;
   }
-  my $untrusted = 1;
+  my %trust_purposes_by_level;
   if ($start_of_cert && /^CKA_VALUE MULTILINE_OCTAL/) {
     my $data;
     while (<TXT>) {
@@ -226,14 +400,21 @@ while (<TXT>) {
       last if (/^CKA_CLASS CK_OBJECT_CLASS CKO_NSS_TRUST/);
       chomp;
     }
-    # now scan the trust part for untrusted certs
+    # now scan the trust part to determine how we should trust this cert
     while (<TXT>) {
       last if (/^#/);
-      if (/^CKA_TRUST_SERVER_AUTH\s+CK_TRUST\s+CKT_NSS_TRUSTED_DELEGATOR$/) {
-          $untrusted = 0;
+      if (/^CKA_TRUST_([A-Z_]+)\s+CK_TRUST\s+CKT_NSS_([A-Z_]+)\s*$/) {
+        if ( !IS_IN_LIST($1,@valid_mozilla_trust_purposes) ) {
+          print STDERR "Warning: Unrecognized trust purpose for cert: $caname. Trust purpose: $1. Trust Level: $2\n" if (!$opt_q);
+        } elsif ( !IS_IN_LIST($2,@valid_mozilla_trust_levels) ) {
+          print STDERR "Warning: Unrecognized trust level for cert: $caname. Trust purpose: $1. Trust Level: $2\n" if (!$opt_q);
+        } else {
+          push @{$trust_purposes_by_level{$2}}, $1;
+        }
       }
     }
-    if ($untrusted) {
+
+    if ( !SHOULD_OUTPUT_CERT(%trust_purposes_by_level) ) {
       $skipnum ++;
     } else {
       my $encoded = MIME::Base64::encode_base64($data, '');
@@ -242,11 +423,34 @@ while (<TXT>) {
               . $encoded
               . "-----END CERTIFICATE-----\n";
       print CRT "\n$caname\n";
-      print CRT ("=" x length($caname) . "\n");
+
+      my $maxStringLength = length($caname);
+      if ($opt_t) {
+        foreach my $key (keys %trust_purposes_by_level) {
+           my $string = $key . ": " . join(", ", @{$trust_purposes_by_level{$key}});
+           $maxStringLength = List::Util::max( length($string), $maxStringLength );
+           print CRT $string . "\n";
+        }
+      }
+      print CRT ("=" x $maxStringLength . "\n");
       if (!$opt_t) {
         print CRT $pem;
       } else {
-        my $pipe = "|$openssl x509 -md5 -fingerprint -text -inform PEM";
+        my $pipe = "";
+        foreach my $hash (@included_signature_algorithms) {
+          $pipe = "|$openssl x509 -" . $hash . " -fingerprint -noout -inform PEM";
+          if (!$stdout) {
+            $pipe .= " >> $crt.~";
+            close(CRT) or die "Couldn't close $crt.~: $!";
+          }
+          open(TMP, $pipe) or die "Couldn't open openssl pipe: $!";
+          print TMP $pem;
+          close(TMP) or die "Couldn't close openssl pipe: $!";
+          if (!$stdout) {
+            open(CRT, ">>$crt.~") or die "Couldn't open $crt.~: $!";
+          }
+        }
+        $pipe = "|$openssl x509 -text -inform PEM";
         if (!$stdout) {
           $pipe .= " >> $crt.~";
           close(CRT) or die "Couldn't close $crt.~: $!";
@@ -279,8 +483,4 @@ unless( $stdout ) {
     rename "$crt.~", $crt or die "Failed to rename $crt.~ to $crt: $!\n";
 }
 unlink $txt if ($opt_u);
-print STDERR "Done ($certnum CA certs processed, $skipnum untrusted skipped).\n" if (!$opt_q);
-
-exit;
-
-
+print STDERR "Done ($certnum CA certs processed, $skipnum skipped).\n" if (!$opt_q);
