@@ -2,7 +2,7 @@
 #
 # Fetch trusted root CA metadata from Microsoft
 
-URL="http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab"
+URL="http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab"
 
 OUTPUT=authroot.json
 
