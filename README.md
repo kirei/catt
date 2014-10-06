@@ -55,6 +55,7 @@ More information:
 ### Microsoft
 
 - http://technet.microsoft.com/en-us/library/cc751157.aspx
+- https://support.microsoft.com/kb/2677070
 
 Root certificate metadata is fetched using **fetch-microsoft-authroot.sh**,
 producing a JSON file called **authroot.json**. Actual root certificates
