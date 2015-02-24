@@ -1,6 +1,7 @@
 subject= /C=AT/L=Vienna/ST=Austria/O=ARGE DATEN - Austrian Society for Data Protection/OU=GLOBALTRUST Certification Service/CN=GLOBALTRUST/emailAddress=info@globaltrust.info
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Qual-02/CN=A-Trust-Qual-02
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Qual-03/CN=A-Trust-Qual-03
+subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Root-05/CN=A-Trust-Root-05
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-nQual-03/CN=A-Trust-nQual-03
 subject= /C=AT/O=A-Trust/OU=A-Trust-nQual-01/CN=A-Trust-nQual-01
 subject= /C=AT/O=Telekom-Control-Kommission/CN=Telekom-Control-Kommission Top 1
@@ -195,6 +196,9 @@ subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 2 CA 1
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 2 Root CA
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 3 CA 1
 subject= /C=NO/O=Buypass AS-983163327/CN=Buypass Class 3 Root CA
+subject= /C=PA/ST=Panama/L=Panama City/O=TrustCor Systems S. de R.L./OU=TrustCor Certificate Authority/CN=TrustCor ECA-1
+subject= /C=PA/ST=Panama/L=Panama City/O=TrustCor Systems S. de R.L./OU=TrustCor Certificate Authority/CN=TrustCor RootCert CA-1
+subject= /C=PA/ST=Panama/L=Panama City/O=TrustCor Systems S. de R.L./OU=TrustCor Certificate Authority/CN=TrustCor RootCert CA-2
 subject= /C=PL/O=Krajowa Izba Rozliczeniowa S.A./CN=SZAFIR ROOT CA
 subject= /C=PL/O=Telekomunikacja Polska S.A./OU=Signet Certification Authority/CN=Signet Root CA
 subject= /C=PL/O=Unizeto Sp. z o.o./CN=Certum CA
@@ -216,6 +220,7 @@ subject= /C=SI/O=POSTA/OU=POSTArCA
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R1
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R2
+subject= /C=TH/O=Electronic Transactions Development Agency (Public Organization)/OU=Thailand National Root Certification Authority/CN=Thailand National Root Certification Authority - G1
 subject= /C=TN/O=ANCE/OU=ANCE WEB/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
 subject= /C=TN/O=ANCE/OU=Certification & PKI/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
 subject= /C=TR/L=Ankara/O=E-Tu\xC4\x9Fra EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./OU=E-Tugra Sertifikasyon Merkezi/CN=E-Tugra Certification Authority
