@@ -3,11 +3,11 @@
 BUNDLE=ca-bundle.crt
 INDEX=index.txt
 EV=ev.json
+EV_INDEX=ev.txt
 
-CERTDATA=certdata.txt
+rm -f *.pem
 
-perl `dirname $0`/mk-ca-bundle.pl
-rm -f $CERTDATA
+perl `dirname $0`/mk-ca-bundle.pl && rm -f certdata.txt
 
 if [ -f $BUNDLE ]; then
 	perl `dirname $0`/split-bundle.pl < $BUNDLE
@@ -16,3 +16,7 @@ if [ -f $BUNDLE ]; then
 fi
 
 python `dirname $0`/extract-mozilla-ev.py -f json | json_pp > $EV
+
+if [ -f $EV ]; then
+	perl `dirname $0`/reformat-ev.pl < $EV > $EV_INDEX
+fi
