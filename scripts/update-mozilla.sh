@@ -18,5 +18,5 @@ fi
 python `dirname $0`/extract-mozilla-ev.py -f json | json_pp > $EV
 
 if [ -f $EV ]; then
-	perl `dirname $0`/reformat-ev.pl < $EV > $EV_INDEX
+	perl `dirname $0`/mk-ev-index.pl < $EV > $EV_INDEX
 fi

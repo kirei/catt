@@ -16,5 +16,5 @@ sh `dirname $0`/mk-ca-index.sh > $INDEX
 perl `dirname $0`/extract-osx-ev.pl > $EV
 
 if [ -f $EV ]; then
-	perl `dirname $0`/reformat-ev.pl < $EV > $EV_INDEX
+	perl `dirname $0`/mk-ev-index.pl < $EV > $EV_INDEX
 fi
