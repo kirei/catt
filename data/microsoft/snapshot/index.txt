@@ -4,10 +4,7 @@ subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Root-05/CN=A-Trust-Root-05
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-nQual-03/CN=A-Trust-nQual-03
 subject= /C=AT/O=A-Trust/OU=A-Trust-nQual-01/CN=A-Trust-nQual-01
-subject= /C=AT/O=Telekom-Control-Kommission/CN=Telekom-Control-Kommission Top 1
-subject= /C=AT/O=\x00A\x00-\x00T\x00r\x00u\x00s\x00t\x00 \x00G\x00e\x00s\x00.\x00 \x00f\x00\xFC\x00r\x00 \x00S\x00i\x00c\x00h\x00e\x00r\x00h\x00e\x00i\x00t\x00s\x00s\x00y\x00s\x00t\x00e\x00m\x00e\x00 \x00i\x00m\x00 \x00e\x00l\x00e\x00k\x00t\x00r\x00.\x00 \x00D\x00a\x00t\x00e\x00n\x00v\x00e\x00r\x00k\x00e\x00h\x00r\x00 \x00G\x00m\x00b\x00H/OU=A-Trust-Qual-01/CN=A-Trust-Qual-01
 subject= /C=AT/ST=Austria/L=Vienna/O=ARGE DATEN - Austrian Society for Data Protection/OU=A-CERT Certification Service/CN=A-CERT ADVANCED/emailAddress=info@a-cert.at
-subject= /C=AT/ST=Austria/L=Vienna/O=Arge Daten Oesterreichische Gesellschaft fuer Datenschutz/emailAddress=a-cert@argedaten.at
 subject= /C=AU/O=GOV/OU=DoD/OU=PKI/OU=CAs/CN=ADOCA02
 subject= /C=BE/O=Certipost s.a./n.v./CN=Certipost E-Trust Primary Normalised CA
 subject= /C=BE/O=Certipost s.a./n.v./CN=Certipost E-Trust Primary Qualified CA
@@ -20,16 +17,11 @@ subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2 G3
 subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 3
 subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 3 G3
 subject= /C=BM/O=QuoVadis Limited/OU=Root Certification Authority/CN=QuoVadis Root Certification Authority
-subject= /C=BR/O=Certisign Certificadora Digital Ltda./OU=Certisign - Autoridade Certificadora - AC2
-subject= /C=BR/O=Certisign Certificadora Digital Ltda./OU=Certisign - Autoridade Certificadora - AC4
-subject= /C=BR/O=Certisign Certificadora Digital Ltda./OU=Certisign Autoridade Certificadora AC1S
 subject= /C=BR/O=ICP-Brasil/OU=Instituto Nacional de Tecnologia da Informacao - ITI/CN=Autoridade Certificadora Raiz Brasileira v1
 subject= /C=BR/O=ICP-Brasil/OU=Instituto Nacional de Tecnologia da Informacao - ITI/CN=Autoridade Certificadora Raiz Brasileira v2
-subject= /C=BR/O=ICP-Brasil/OU=Instituto Nacional de Tecnologia da Informacao - ITI/L=Brasilia/ST=DF/CN=Autoridade Certificadora Raiz Brasileira
 subject= /C=BR/O=Serasa S.A./OU=Serasa CA I/CN=Serasa Certificate Authority I
 subject= /C=BR/O=Serasa S.A./OU=Serasa CA II/CN=Serasa Certificate Authority II
 subject= /C=BR/O=Serasa S.A./OU=Serasa CA III/CN=Serasa Certificate Authority III
-subject= /C=BR/ST=Rio de Janeiro/L=Rio de Janeiro/O=Certisign Certificadora Digital Ltda./OU=Certisign Autoridade Certificadora AC3S
 subject= /C=CA/ST=Ontario/L=Toronto/O=Echoworx Corporation/OU=Certification Services/CN=Echoworx Root CA2
 subject= /C=CH/O=SwissSign AG/CN=SwissSign Gold CA - G2
 subject= /C=CH/O=SwissSign AG/CN=SwissSign Gold Root CA - G3
@@ -50,14 +42,12 @@ subject= /C=CN/O=UniTrust/CN=UCA Global Root
 subject= /C=CN/O=UniTrust/CN=UCA Root
 subject= /C=CN/O=WoSign CA Limited/CN=CA \xE6\xB2\x83\xE9\x80\x9A\xE6\xA0\xB9\xE8\xAF\x81\xE4\xB9\xA6
 subject= /C=CN/O=WoSign CA Limited/CN=Certification Authority of WoSign
-subject= /C=CO/L=Carrera 9 16-21 Bogota/O=Certicamara S.A. Entidad de Certificacion/CN=Certificado Empresarial Clase-A
 subject= /C=CO/O=Sociedad Cameral de Certificaci\xC3\xB3n Digital - Certic\xC3\xA1mara S.A./CN=AC Ra\xC3\xADz Certic\xC3\xA1mara S.A.
 subject= /C=CZ/CN=I.CA - Qualified Certification Authority, 09/2009/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s./OU=I.CA - Accredited Provider of Certification Services
 subject= /C=CZ/CN=I.CA - Qualified root certificate/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s.
 subject= /C=CZ/CN=I.CA - Standard Certification Authority, 09/2009/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s./OU=I.CA - Provider of Certification Services
 subject= /C=CZ/CN=I.CA - Standard root certificate/O=Prvni certifikacni autorita a.s.
 subject= /C=CZ/O=\xC4\x8Cesk\xC3\xA1 po\xC5\xA1ta, s.p. [I\xC4\x8C 47114983]/CN=PostSignum Root QCA 2
-subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Qualified Root CA 1 2007:PN
 subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root CA 3 2013
 subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root Class 2 CA 2007
 subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root Class 3 CA 2 2009
@@ -81,16 +71,10 @@ subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 4 CA/CN=TC TrustCen
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA I
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA III
 subject= /C=DE/ST=Baden-Wuerttemberg (BW)/L=Stuttgart/O=Deutscher Sparkassen Verlag GmbH/CN=S-TRUST Authentication and Encryption Root CA 2005:PN
-subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 2 CA/emailAddress=certificate@trustcenter.de
-subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 3 CA/emailAddress=certificate@trustcenter.de
-subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Class 4 CA/emailAddress=certificate@trustcenter.de
-subject= /C=DE/ST=Hamburg/L=Hamburg/O=TC TrustCenter for Security in Data Networks GmbH/OU=TC TrustCenter Time Stamping CA/CN=TC TrustCenter Time Stamping CA
-subject= /C=DK/O=TDC Internet/OU=TDC Internet Root CA
 subject= /C=DK/O=TDC/CN=TDC OCES CA
 subject= /C=DK/O=TRUST2408/CN=TRUST2408 OCES Primary CA
 subject= /C=EE/O=AS Sertifitseerimiskeskus/CN=EE Certification Centre Root CA/emailAddress=pki@sk.ee
 subject= /C=ES/CN=Autoridad de Certificacion Firmaprofesional CIF A62634068
-subject= /C=ES/L=C/ Muntaner 244 Barcelona/CN=Autoridad de Certificacion Firmaprofesional CIF A62634068/emailAddress=ca@firmaprofesional.com
 subject= /C=ES/O=Agencia Catalana de Certificacio (NIF Q-0801176-I)/OU=Serveis Publics de Certificacio/OU=Vegeu https://www.catcert.net/verarrel (c)03/OU=Jerarquia Entitats de Certificacio Catalanes/CN=EC-ACC
 subject= /C=ES/O=Agencia Notarial de Certificacion S.L. Unipersonal - CIF B83395988/CN=ANCERT Certificados CGN
 subject= /C=ES/O=Agencia Notarial de Certificacion S.L. Unipersonal - CIF B83395988/CN=ANCERT Certificados Notariales
@@ -129,7 +113,6 @@ subject= /C=FR/O=Certplus/CN=Class 3P Primary CA
 subject= /C=FR/O=Certplus/CN=Class 3TS Primary CA
 subject= /C=FR/O=Dhimyotis/CN=Certigna
 subject= /C=FR/O=KEYNECTIS/OU=ROOT/CN=KEYNECTIS ROOT CA
-subject= /C=FR/O=NATIXIS/OU=0002 542044524/CN=CESAM
 subject= /C=FR/ST=France/L=Paris/O=PM/SGDN/OU=DCSSI/CN=IGC/A/emailAddress=igca@sgdn.pm.gouv.fr
 subject= /C=GB/O=Trustis Limited/OU=Trustis EVS Root CA
 subject= /C=GB/O=Trustis Limited/OU=Trustis FPS Root CA
@@ -139,7 +122,6 @@ subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=AAA Certificate Services
 subject= /C=GR/O=Athens Exchange S.A./CN=ATHEX Root CA
 subject= /C=GR/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions RootCA 2011
-subject= /C=HK/O=Hongkong Post/CN=Hongkong Post Root CA
 subject= /C=HK/O=Hongkong Post/CN=Hongkong Post Root CA 1
 subject= /C=HU/L=Budapest/O=Microsec Ltd./CN=Microsec e-Szigno Root CA 2009/emailAddress=info@e-szigno.hu
 subject= /C=HU/L=Budapest/O=Microsec Ltd./OU=e-Szigno CA/CN=Microsec e-Szigno Root CA
@@ -173,10 +155,7 @@ subject= /C=JP/O=SECOM Trust Systems CO.,LTD./OU=Security Communication RootCA2
 subject= /C=JP/O=SECOM Trust.net/OU=Security Communication RootCA1
 subject= /C=KR/O=Government of Korea/OU=GPKI/CN=GPKIRootCA
 subject= /C=KR/O=Government of Korea/OU=GPKI/CN=GPKIRootCA1
-subject= /C=KR/O=Government of Korea/OU=GPKI/CN=Root CA
 subject= /C=KR/O=KISA/OU=Korea Certification Authority Central/CN=KISA RootCA 1
-subject= /C=KR/O=KISA/OU=Korea Certification Authority Central/CN=KISA RootCA 3
-subject= /C=KR/O=KISA/OU=ROOTCA/CN=CertRSA01
 subject= /C=LT/O=Skaitmeninio sertifikavimo centras/OU=CA ROOT Services/CN=SSC GDL CA Root B
 subject= /C=LT/O=Skaitmeninio sertifikavimo centras/OU=Certification Authority/CN=SSC Root CA A
 subject= /C=LT/O=Skaitmeninio sertifikavimo centras/OU=Certification Authority/CN=SSC Root CA B
@@ -185,7 +164,6 @@ subject= /C=LT/O=VI Registru Centras - I.k. 124110246/OU=Registru Centro Sertifi
 subject= /C=LU/O=LuxTrust s.a./CN=LuxTrust Global Root
 subject= /C=LV/O=VAS Latvijas Pasts - Vien.reg.Nr.40003052790/OU=Sertifikacijas pakalpojumi/CN=VAS Latvijas Pasts SSI(RCA)
 subject= /C=LV/OU=Sertifikacijas pakalpojumu dala/CN=E-ME SSI (RCA)
-subject= /C=MO/O=Macao Post/CN=Macao Post eSignTrust Root Certification Authority
 subject= /C=MO/O=Macao Post/CN=Macao Post eSignTrust Root Certification Authority (G02)
 subject= /C=NL/O=Digidentity B.V./CN=Digidentity L3 Root CA - G2
 subject= /C=NL/O=Staat der Nederlanden/CN=Staat der Nederlanden EV Root CA
@@ -239,7 +217,6 @@ subject= /C=US/O=AffirmTrust/CN=AffirmTrust Networking
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium ECC
 subject= /C=US/O=America Online Inc./CN=America Online Root Certification Authority 1
-subject= /C=US/O=America Online Inc./CN=America Online Root Certification Authority 2
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G2
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G3
@@ -248,11 +225,6 @@ subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G2
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G3
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Trusted Root G4
-subject= /C=US/O=Digital Signature Trust Co./CN=Baltimore EZ by DST/mail=ca@digsigtrust.com
-subject= /C=US/O=Digital Signature Trust Co./OU=DST (ANX Network) CA
-subject= /C=US/O=Digital Signature Trust Co./OU=DST-Entrust GTI CA
-subject= /C=US/O=Digital Signature Trust Co./OU=DSTCA E1
-subject= /C=US/O=Digital Signature Trust Co./OU=DSTCA E2
 subject= /C=US/O=Digital Signature Trust/OU=DST ACES/CN=DST ACES CA X6
 subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2009 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - G2
 subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2012 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - EC1
@@ -260,11 +232,8 @@ subject= /C=US/O=Entrust, Inc./OU=www.entrust.net/CPS is incorporated by referen
 subject= /C=US/O=Entrust.net/OU=www.entrust.net/CPS incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Secure Server Certification Authority
 subject= /C=US/O=Equifax Secure Inc./CN=Equifax Secure Global eBusiness CA-1
 subject= /C=US/O=Equifax Secure Inc./CN=Equifax Secure eBusiness CA-1
-subject= /C=US/O=Equifax Secure/OU=Equifax Secure eBusiness CA-2
 subject= /C=US/O=Equifax/OU=Equifax Secure Certificate Authority
-subject= /C=US/O=GTE Corporation/CN=GTE CyberTrust Root
 subject= /C=US/O=GTE Corporation/OU=GTE CyberTrust Solutions, Inc./CN=GTE CyberTrust Global Root
-subject= /C=US/O=GTE Corporation/OU=GTE CyberTrust Solutions, Inc./CN=GTE CyberTrust Root
 subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
 subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA 2
 subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Primary Certification Authority
@@ -274,9 +243,7 @@ subject= /C=US/O=GeoTrust Inc./OU=(c) 2007 GeoTrust Inc. - For authorized use on
 subject= /C=US/O=GeoTrust Inc./OU=(c) 2008 GeoTrust Inc. - For authorized use only/CN=GeoTrust Primary Certification Authority - G3
 subject= /C=US/O=IdenTrust/CN=IdenTrust Commercial Root CA 1
 subject= /C=US/O=IdenTrust/CN=IdenTrust Public Sector Root CA 1
-subject= /C=US/O=MSFT/CN=Microsoft Authenticode(tm) Root Authority
 subject= /C=US/O=Network Solutions L.L.C./CN=Network Solutions Certificate Authority
-subject= /C=US/O=RSA Data Security, Inc./OU=Secure Server Certification Authority
 subject= /C=US/O=SecureTrust Corporation/CN=Secure Global CA
 subject= /C=US/O=SecureTrust Corporation/CN=SecureTrust CA
 subject= /C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority
@@ -290,13 +257,8 @@ subject= /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Auth
 subject= /C=US/O=U.S. Government/OU=FPKI/CN=Federal Common Policy CA
 subject= /C=US/O=VISA/OU=Visa International Service Association/CN=Visa Information Delivery Root CA
 subject= /C=US/O=VISA/OU=Visa International Service Association/CN=Visa eCommerce Root
-subject= /C=US/O=VeriSign, Inc./OU=Class 1 Public Primary Certification Authority
-subject= /C=US/O=VeriSign, Inc./OU=Class 1 Public Primary Certification Authority - G2/OU=(c) 1998 VeriSign, Inc. - For authorized use only/OU=VeriSign Trust Network
-subject= /C=US/O=VeriSign, Inc./OU=Class 2 Public Primary Certification Authority
-subject= /C=US/O=VeriSign, Inc./OU=Class 2 Public Primary Certification Authority - G2/OU=(c) 1998 VeriSign, Inc. - For authorized use only/OU=VeriSign Trust Network
 subject= /C=US/O=VeriSign, Inc./OU=Class 3 Public Primary Certification Authority
 subject= /C=US/O=VeriSign, Inc./OU=Class 3 Public Primary Certification Authority - G2/OU=(c) 1998 VeriSign, Inc. - For authorized use only/OU=VeriSign Trust Network
-subject= /C=US/O=VeriSign, Inc./OU=Class 4 Public Primary Certification Authority - G2/OU=(c) 1998 VeriSign, Inc. - For authorized use only/OU=VeriSign Trust Network
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 1 Public Primary Certification Authority - G3
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 2 Public Primary Certification Authority - G3
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G3
@@ -315,7 +277,6 @@ subject= /C=US/ST=Arizona/L=Scottsdale/O=GoDaddy.com, Inc./CN=Go Daddy Root Cert
 subject= /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Root Certificate Authority - G2
 subject= /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Services Root Certificate Authority - G2
 subject= /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./OU=http://certificates.starfieldtech.com/repository//CN=Starfield Services Root Certificate Authority
-subject= /C=US/ST=DC/L=Washington/O=ABA.ECOM, INC./CN=ABA.ECOM Root CA/emailAddress=admin@digsigtrust.com
 subject= /C=US/ST=MN/L=Minneapolis/O=Open Access Technology International Inc/CN=OATI WebCARES Root CA
 subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust ECC Certification Authority
 subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust RSA Certification Authority
@@ -324,35 +285,24 @@ subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.user
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Hardware
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Network Applications
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Object
-subject= /C=US/ST=Utah/L=Salt Lake City/O=Xcert EZ by DST/CN=Xcert EZ by DST/emailAddress=ca@digsigtrust.com
 subject= /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2010
 subject= /C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2011
 subject= /C=UY/O=ADMINISTRACION NACIONAL DE CORREOS/OU=SERVICIOS ELECTRONICOS/CN=Correo Uruguayo - Root CA
-subject= /C=UY/O=ADMINISTRACION NACIONAL DE CORREOS/OU=SERVICIOS ELECTRONICOS/CN=SERVICIOS DE CERTIFICACION - A.N.C./mail=correo_cert@correo.com.uy
 subject= /C=ZA/O=LAWtrust/OU=LAW Trusted Third Party Services PTY Ltd./CN=LAWtrust Root Certification Authority 2048
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Premium Server CA/emailAddress=premium-server@thawte.com
 subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting cc/OU=Certification Services Division/CN=Thawte Server CA/emailAddress=server-certs@thawte.com
-subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting/OU=Certification Services Division/CN=Thawte Personal Basic CA/emailAddress=personal-basic@thawte.com
-subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting/OU=Certification Services Division/CN=Thawte Personal Freemail CA/emailAddress=personal-freemail@thawte.com
-subject= /C=ZA/ST=Western Cape/L=Cape Town/O=Thawte Consulting/OU=Certification Services Division/CN=Thawte Personal Premium CA/emailAddress=personal-premium@thawte.com
 subject= /C=ZA/ST=Western Cape/L=Durbanville/O=Thawte/OU=Thawte Certification/CN=Thawte Timestamping CA
 subject= /C=ZA/ST=Western Cape/L=Somerset West/O=South African Post Office Limited/OU=SAPO Trust Centre/CN=SAPO Class 2 Root CA/emailAddress=pkiadmin@trustcentre.co.za
 subject= /C=ZA/ST=Western Cape/L=Somerset West/O=South African Post Office Limited/OU=SAPO Trust Centre/CN=SAPO Class 3 Root CA/emailAddress=pkiadmin@trustcentre.co.za
 subject= /C=ZA/ST=Western Cape/L=Somerset West/O=South African Post Office Limited/OU=SAPO Trust Centre/CN=SAPO Class 4 Root CA/emailAddress=pkiadmin@trustcentre.co.za
-subject= /C=au/O=SecureNet CA Class B
 subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root CA 1
 subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root CA 2
 subject= /C=ch/O=Swisscom/OU=Digital Certificate Services/CN=Swisscom Root EV CA 2
 subject= /C=ch/O=admin/OU=Services/OU=Certification Authorities/CN=Admin-Root-CA
-subject= /C=es/O=Servicio de Certificacion del Colegio de Registradores (SCR)/OU=Certificado Propio/OU=Certificado Raiz/CN=Certificado de la Clave Principal/street=Principe de Vergara 72 28006 Madrid/emailAddress=scr@registradores.org
 subject= /C=my/O=TM/OU=TM Applied Business Certification Authority/CN=TM Applied Business Root Certificate
 subject= /C=si/O=state-institutions/OU=sigen-ca
 subject= /C=si/O=state-institutions/OU=sigov-ca
 subject= /C=us/O=U.S. Government/OU=FBCA/CN=Common Policy
-subject= /C=us/ST=Utah/L=Salt Lake City/O=Digital Signature Trust Co./OU=DSTCA X1/CN=DST RootCA X1/emailAddress=ca@digsigtrust.com
-subject= /C=us/ST=Utah/L=Salt Lake City/O=Digital Signature Trust Co./OU=DSTCA X2/CN=DST RootCA X2/emailAddress=ca@digsigtrust.com
-subject= /C=us/ST=Utah/L=Salt Lake City/O=Digital Signature Trust Co./OU=National Retail Federation/CN=DST (NRF) RootCA/emailAddress=ca@digsigtrust.com
-subject= /C=us/ST=Utah/L=Salt Lake City/O=Digital Signature Trust Co./OU=United Parcel Service/CN=DST (UPS) RootCA/emailAddress=ca@digsigtrust.com
 subject= /CN=AC1 RAIZ MTIN/serialNumber=S2819001E/OU=PRESTADOR DE SERVICIOS DE CERTIFICACION MTIN/OU=SUBDIRECCION GENERAL DE PROCESO DE DATOS/O=MINISTERIO DE TRABAJO E INMIGRACION/L=MADRID/C=ES
 subject= /CN=ACCVRAIZ1/OU=PKIACCV/O=ACCV/C=ES
 subject= /CN=ACEDICOM Root/OU=PKI/O=EDICOM/C=ES
@@ -379,18 +329,13 @@ subject= /L=Internet/O=VeriSign, Inc./OU=VeriSign Commercial Software Publishers
 subject= /L=Internet/O=VeriSign, Inc./OU=VeriSign Individual Software Publishers CA
 subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 1 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
 subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 2 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
-subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 3 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
 subject= /O=Cisco Systems/CN=Cisco Root CA 2048
 subject= /O=Cybertrust, Inc/CN=Cybertrust Global Root
 subject= /O=Digital Signature Trust Co./CN=DST Root CA X3
 subject= /O=Entrust.net/OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Certification Authority (2048)
-subject= /O=Microsoft Trust Network/OU=Microsoft Corporation/OU=Microsoft Time Stamping Service Root/OU=Copyright (c) 1997 Microsoft Corp.
 subject= /O=RSA Security Inc/OU=RSA Security 2048 V3
 subject= /O=TeliaSonera/CN=TeliaSonera Root CA v1
 subject= /O=VeriSign Trust Network/OU=VeriSign, Inc./OU=VeriSign Time Stamping Service Root/OU=NO LIABILITY ACCEPTED, (c)97 VeriSign, Inc.
-subject= /O=eSign Australia/OU=Gatekeeper PKI/CN=Gatekeeper Root CA
-subject= /O=eSign Australia/OU=Public Secure Services/CN=Primary Utility Root CA
-subject= /O=eSign Australia/OU=Public Secure Services/CN=eSign Imperito Primary Root CA
 subject= /OU=Copyright (c) 1997 Microsoft Corp./OU=Microsoft Corporation/CN=Microsoft Root Authority
 subject= /OU=GlobalSign ECC Root CA - R4/O=GlobalSign/CN=GlobalSign
 subject= /OU=GlobalSign ECC Root CA - R5/O=GlobalSign/CN=GlobalSign
