@@ -5,4 +5,4 @@
 KEYCHAIN=${1:-"/System/Library/Keychains/SystemRootCertificates.keychain"}
 
 echo "Exporting trusted CAs from ${KEYCHAIN}" >&2
-security export -k $KEYCHAIN -t certs
+security export -k $KEYCHAIN -t certs -o apple.pem

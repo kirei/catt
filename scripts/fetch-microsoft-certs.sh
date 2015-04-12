@@ -3,6 +3,7 @@
 # Fetch trusted root CAs from Microsoft authroot JSON file
 
 INPUT=authroot.json
+OUTPUT=microsoft.pem
 
 if [ ! -r $INPUT ]; then
 	echo "Missing input file: $INPUT"
@@ -21,7 +22,7 @@ for url in `perl -ne 'print "$1\n" if(/URLToCert.*\"(http:.*)\"/)' < $INPUT`; do
 	if [ ! -r $PEM ]; then
 		echo "Found new certificate ${BASE}"
 		curl -s -o $DER $url
-		openssl x509 -inform der -in $DER -outform pem -out $PEM
+		openssl x509 -inform der -in $DER -outform pem >> $OUTPUT
 		rm -f $DER
 	else
 		echo "Skipped existing certificate ${BASE}"

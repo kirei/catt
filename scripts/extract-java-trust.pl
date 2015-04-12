@@ -26,5 +26,5 @@ close(CERTLIST);
 
 foreach my $alias (@aliases) {
     printf STDERR ("Exporting %s\n", $alias);
-    system("$keytool -exportcert -alias $alias | openssl x509 -inform der");
+    system("$keytool -exportcert -alias $alias | openssl x509 -inform der >> java.pem");
 }
