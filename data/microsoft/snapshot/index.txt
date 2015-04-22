@@ -3,14 +3,11 @@ subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Qual-03/CN=A-Trust-Qual-03
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-Root-05/CN=A-Trust-Root-05
 subject= /C=AT/O=A-Trust Ges. f. Sicherheitssysteme im elektr. Datenverkehr GmbH/OU=A-Trust-nQual-03/CN=A-Trust-nQual-03
-subject= /C=AT/O=A-Trust/OU=A-Trust-nQual-01/CN=A-Trust-nQual-01
-subject= /C=AT/ST=Austria/L=Vienna/O=ARGE DATEN - Austrian Society for Data Protection/OU=A-CERT Certification Service/CN=A-CERT ADVANCED/emailAddress=info@a-cert.at
 subject= /C=AU/O=GOV/OU=DoD/OU=PKI/OU=CAs/CN=ADOCA02
 subject= /C=BE/O=Certipost s.a./n.v./CN=Certipost E-Trust Primary Normalised CA
 subject= /C=BE/O=Certipost s.a./n.v./CN=Certipost E-Trust Primary Qualified CA
 subject= /C=BE/O=Certipost s.a./n.v./CN=Certipost E-Trust TOP Root CA
 subject= /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
-subject= /C=BG/O=InfoNotary PLC/DC=root-ca/CN=InfoNotary CSP Root/OU=InfoNotary CSP Root/emailAddress=csp@infonotary.com
 subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 1 G3
 subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2
 subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 2 G3
@@ -89,11 +86,8 @@ subject= /C=ES/O=FNMT/OU=FNMT Clase 2 CA
 subject= /C=ES/O=Generalitat Valenciana/OU=PKIGVA/CN=Root CA Generalitat Valenciana
 subject= /C=ES/O=IZENPE S.A. - CIF A-01337260-RMerc.Vitoria-Gasteiz T1055 F62 S8/L=Avda del Mediterraneo Etorbidea 3 - 01010 Vitoria-Gasteiz/CN=Izenpe.com/emailAddress=Info@izenpe.com
 subject= /C=ES/O=IZENPE S.A./CN=Izenpe.com
-subject= /C=ES/ST=BARCELONA/L=BARCELONA/O=IPS Seguridad CA/OU=Certificaciones/CN=IPS SERVIDORES/emailAddress=ips@mail.ips.es
 subject= /C=ES/ST=Barcelona/L=Barcelona (see current address at http://www.anf.es/es/address-direccion.html )/O=ANF Autoridad de Certificacion/OU=ANF Clase 1 CA/emailAddress=info@anf.es/serialNumber=G63287510/CN=ANF Global Root CA
 subject= /C=ES/ST=Barcelona/L=Barcelona (see current address at https://www.anf.es/address/)/O=ANF Autoridad de Certificaci\xC3\xB3n/OU=ANF Clase 1 CA/serialNumber=G63287510/CN=ANF Server CA
-subject= /C=ES/ST=Madrid/L=Madrid/O=IPS Certification Authority s.l. ipsCA/OU=ipsCA/CN=ipsCA Global CA Root/emailAddress=global01@ipsca.com
-subject= /C=ES/ST=Madrid/L=Madrid/O=IPS Certification Authority s.l. ipsCA/OU=ipsCA/CN=ipsCA Main CA Root/emailAddress=main01@ipsca.com
 subject= /C=EU/L=Madrid (see current address at www.camerfirma.com/address)/serialNumber=A82743287/O=AC Camerfirma S.A./CN=Chambers of Commerce Root - 2008
 subject= /C=EU/L=Madrid (see current address at www.camerfirma.com/address)/serialNumber=A82743287/O=AC Camerfirma S.A./CN=Global Chambersign Root - 2008
 subject= /C=EU/O=AC Camerfirma SA CIF A82743287/OU=http://www.chambersign.org/CN=Chambers of Commerce Root
@@ -126,9 +120,7 @@ subject= /C=HK/O=Hongkong Post/CN=Hongkong Post Root CA 1
 subject= /C=HU/L=Budapest/O=Microsec Ltd./CN=Microsec e-Szigno Root CA 2009/emailAddress=info@e-szigno.hu
 subject= /C=HU/L=Budapest/O=Microsec Ltd./OU=e-Szigno CA/CN=Microsec e-Szigno Root CA
 subject= /C=HU/L=Budapest/O=NISZ Nemzeti Infokommunik\xC3\xA1ci\xC3\xB3s Szolg\xC3\xA1ltat\xC3\xB3 Zrt./CN=F\xC5\x91tan\xC3\xBAs\xC3\xADtv\xC3\xA1nykiad\xC3\xB3 - Korm\xC3\xA1nyzati Hiteles\xC3\xADt\xC3\xA9s Szolg\xC3\xA1ltat\xC3\xB3
-subject= /C=HU/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/CN=NetLock Expressz (Class C) Tanusitvanykiado
 subject= /C=HU/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/CN=NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado/emailAddress=info@netlock.hu
-subject= /C=HU/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/CN=NetLock Uzleti (Class B) Tanusitvanykiado
 subject= /C=HU/L=Budapest/O=NetLock Kft./OU=Tan\xC3\xBAs\xC3\xADtv\xC3\xA1nykiad\xC3\xB3k (Certification Services)/CN=NetLock Arany (Class Gold) F\xC5\x91tan\xC3\xBAs\xC3\xADtv\xC3\xA1ny
 subject= /C=HU/L=Budapest/O=NetLock Kft./OU=Tan\xC3\xBAs\xC3\xADtv\xC3\xA1nykiad\xC3\xB3k (Certification Services)/CN=NetLock Platina (Class Platinum) F\xC5\x91tan\xC3\xBAs\xC3\xADtv\xC3\xA1ny
 subject= /C=HU/ST=Hungary/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/CN=NetLock Kozjegyzoi (Class A) Tanusitvanykiado
@@ -199,8 +191,6 @@ subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R1
 subject= /C=SK/L=Bratislava/O=Disig a.s./CN=CA Disig Root R2
 subject= /C=TH/O=Electronic Transactions Development Agency (Public Organization)/OU=Thailand National Root Certification Authority/CN=Thailand National Root Certification Authority - G1
-subject= /C=TN/O=ANCE/OU=ANCE WEB/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
-subject= /C=TN/O=ANCE/OU=Certification & PKI/CN=Agence Nationale de Certification Electronique/emailAddress=ance@certification.tn
 subject= /C=TR/L=Ankara/O=E-Tu\xC4\x9Fra EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./OU=E-Tugra Sertifikasyon Merkezi/CN=E-Tugra Certification Authority
 subject= /C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E./CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1 H5
 subject= /C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E./CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1 H6
@@ -324,11 +314,7 @@ subject= /CN=esignit.org
 subject= /DC=com/DC=microsoft/CN=Microsoft Root Certificate Authority
 subject= /DC=rs/DC=posta/DC=ca/CN=Configuration/CN=Services/CN=Public Key Services/CN=AIA/CN=Posta CA Root
 subject= /L=Alvaro Obregon/ST=Distrito Federal/C=MX/postalCode=01030/street=Insurgentes Sur 1940/CN=Autoridad Certificadora Raiz de la Secretaria de Economia/OU=Direccion General de Normatividad Mercantil/O=Secretaria de Economia/emailAddress=acrse@economia.gob.mx
-subject= /L=Bogota AV Calle 26 N 68D-35/C=CO/O=Entidad de Certificacion Digital Abierta Certicamara S.A./CN=CERTICAMARA S.A.
 subject= /L=Internet/O=VeriSign, Inc./OU=VeriSign Commercial Software Publishers CA
-subject= /L=Internet/O=VeriSign, Inc./OU=VeriSign Individual Software Publishers CA
-subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 1 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
-subject= /L=ValiCert Validation Network/O=ValiCert, Inc./OU=ValiCert Class 2 Policy Validation Authority/CN=http://www.valicert.com//emailAddress=info@valicert.com
 subject= /O=Cisco Systems/CN=Cisco Root CA 2048
 subject= /O=Cybertrust, Inc/CN=Cybertrust Global Root
 subject= /O=Digital Signature Trust Co./CN=DST Root CA X3
