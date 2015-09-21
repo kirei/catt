@@ -16,6 +16,7 @@ The certificates will then be available in microsoft.pem.
 
 You need to be on an OS X host, then run:
 
+    sudo cpan Mac::PropertyList
    ./update-osx.sh
 
 The certificates will then be available in apple.pem.
@@ -25,7 +26,7 @@ The certificates will then be available in apple.pem.
 
   ./mk-ca-bundle.pl
 
-The certificates will then be available in ca-certs.crt.
+The certificates will then be available in ca-bundles.crt.
 
 
 ### Java
@@ -35,3 +36,7 @@ You need to be on an OS X host, then run:
   ./extract-java-trust.pl
 
 The certificates will then be available in java.pem.
+
+### Google
+
+https://pki.google.com/roots.pem
