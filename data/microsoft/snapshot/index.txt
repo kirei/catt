@@ -35,6 +35,7 @@ subject= /C=CL/ST=Region Metropolitana/L=Santiago/O=E-CERTCHILE/OU=Autoridad Cer
 subject= /C=CN/O=CFCA GT CA
 subject= /C=CN/O=CNNIC/CN=CNNIC ROOT
 subject= /C=CN/O=China Financial Certification Authority/CN=CFCA EV ROOT
+subject= /C=CN/O=China Financial Certification Authority/CN=CFCA Identity CA
 subject= /C=CN/O=China Internet Network Information Center/CN=China Internet Network Information Center EV Certificates Root
 subject= /C=CN/O=GUANG DONG CERTIFICATE AUTHORITY CO.,LTD./CN=GDCA TrustAUTH R5 ROOT
 subject= /C=CN/O=UniTrust/CN=UCA Global Root
@@ -48,6 +49,7 @@ subject= /C=CZ/CN=I.CA - Qualified Certification Authority, 09/2009/O=Prvn\xC3\x
 subject= /C=CZ/CN=I.CA - Qualified root certificate/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s.
 subject= /C=CZ/CN=I.CA - Standard Certification Authority, 09/2009/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s./OU=I.CA - Provider of Certification Services
 subject= /C=CZ/CN=I.CA - Standard root certificate/O=Prvni certifikacni autorita a.s.
+subject= /C=CZ/O=Prvn\xC3\xAD certifika\xC4\x8Dn\xC3\xAD autorita, a.s./CN=I.CA Root CA/RSA/serialNumber=NTRCZ-26439395
 subject= /C=CZ/O=\xC4\x8Cesk\xC3\xA1 po\xC5\xA1ta, s.p. [I\xC4\x8C 47114983]/CN=PostSignum Root QCA 2
 subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root CA 3 2013
 subject= /C=DE/O=D-Trust GmbH/CN=D-TRUST Root Class 2 CA 2007
@@ -67,11 +69,7 @@ subject= /C=DE/O=Deutsche Telekom AG/OU=T-TeleSec Trust Center/CN=Deutsche Telek
 subject= /C=DE/O=Deutscher Sparkassen Verlag GmbH/OU=S-TRUST Certification Services/CN=S-TRUST Universal Root CA
 subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 2
 subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 3
-subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 2 CA/CN=TC TrustCenter Class 2 CA II
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 3 CA/CN=TC TrustCenter Class 3 CA II
-subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 4 CA/CN=TC TrustCenter Class 4 CA II
-subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA I
-subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Universal CA/CN=TC TrustCenter Universal CA III
 subject= /C=DE/ST=Baden-Wuerttemberg (BW)/L=Stuttgart/O=Deutscher Sparkassen Verlag GmbH/CN=S-TRUST Authentication and Encryption Root CA 2005:PN
 subject= /C=DK/O=TDC/CN=TDC OCES CA
 subject= /C=DK/O=TRUST2408/CN=TRUST2408 OCES Primary CA
@@ -97,7 +95,6 @@ subject= /C=EU/L=Madrid (see current address at www.camerfirma.com/address)/seri
 subject= /C=EU/L=Madrid (see current address at www.camerfirma.com/address)/serialNumber=A82743287/O=AC Camerfirma S.A./CN=Global Chambersign Root - 2008
 subject= /C=EU/O=AC Camerfirma SA CIF A82743287/OU=http://www.chambersign.org/CN=Chambers of Commerce Root
 subject= /C=EU/O=AC Camerfirma SA CIF A82743287/OU=http://www.chambersign.org/CN=Global Chambersign Root
-subject= /C=EU/O=AC Camerfirma SA CIF A82743287/OU=http://www.chambersign.org/CN=Public Notary Root
 subject= /C=FI/O=Sonera/CN=Sonera Class1 CA
 subject= /C=FI/O=Sonera/CN=Sonera Class2 CA
 subject= /C=FI/ST=Finland/O=Vaestorekisterikeskus CA/OU=Certification Authority Services/OU=Varmennepalvelut/CN=VRK Gov. Root CA
@@ -124,6 +121,8 @@ subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO Cer
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Certification Authority
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=AAA Certificate Services
+subject= /C=GR/L=Athens/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions ECC RootCA 2015
+subject= /C=GR/L=Athens/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions RootCA 2015
 subject= /C=GR/O=Athens Exchange S.A./CN=ATHEX Root CA
 subject= /C=GR/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions RootCA 2011
 subject= /C=HK/O=Hongkong Post/CN=Hongkong Post Root CA 1
@@ -184,7 +183,6 @@ subject= /C=PL/O=Krajowa Izba Rozliczeniowa S.A./CN=SZAFIR ROOT CA
 subject= /C=PL/O=Telekomunikacja Polska S.A./OU=Signet Certification Authority/CN=Signet Root CA
 subject= /C=PL/O=Unizeto Sp. z o.o./CN=Certum CA
 subject= /C=PL/O=Unizeto Technologies S.A./OU=Certum Certification Authority/CN=Certum Trusted Network CA
-subject= /C=PL/O=Unizeto Technologies S.A./OU=Certum Certification Authority/CN=Certum Trusted Network CA 2
 subject= /C=PT/O=MULTICERT - Servi\xC3\xA7os de Certifica\xC3\xA7\xC3\xA3o Electr\xC3\xB3nica S.A./CN=MULTICERT Root Certification Authority 01
 subject= /C=PT/O=SCEE/CN=ECRaizEstado
 subject= /C=RO/O=certSIGN/OU=certSIGN ROOT CA
@@ -234,7 +232,6 @@ subject= /C=US/O=Digital Signature Trust/OU=DST ACES/CN=DST ACES CA X6
 subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2009 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - G2
 subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2012 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - EC1
 subject= /C=US/O=Entrust, Inc./OU=www.entrust.net/CPS is incorporated by reference/OU=(c) 2006 Entrust, Inc./CN=Entrust Root Certification Authority
-subject= /C=US/O=Entrust.net/OU=www.entrust.net/CPS incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Secure Server Certification Authority
 subject= /C=US/O=Equifax Secure Inc./CN=Equifax Secure Global eBusiness CA-1
 subject= /C=US/O=Equifax/OU=Equifax Secure Certificate Authority
 subject= /C=US/O=GTE Corporation/OU=GTE CyberTrust Solutions, Inc./CN=GTE CyberTrust Global Root
@@ -266,7 +263,6 @@ subject= /C=US/O=VeriSign, Inc./OU=Class 3 Public Primary Certification Authorit
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 1 Public Primary Certification Authority - G3
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 2 Public Primary Certification Authority - G3
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G3
-subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 4 Public Primary Certification Authority - G3
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G5
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2007 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G4
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2008 VeriSign, Inc. - For authorized use only/CN=VeriSign Universal Root Certification Authority
@@ -284,7 +280,6 @@ subject= /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./OU=http://
 subject= /C=US/ST=MN/L=Minneapolis/O=Open Access Technology International Inc/CN=OATI WebCARES Root CA
 subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust ECC Certification Authority
 subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust RSA Certification Authority
-subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN - DATACorp SGC
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Client Authentication and Email
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Hardware
 subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Network Applications
@@ -318,7 +313,6 @@ subject= /CN=ComSign CA/O=ComSign/C=IL
 subject= /CN=ComSign Global Root CA/O=ComSign Ltd./C=IL
 subject= /CN=ComSign Secured CA/O=ComSign/C=IL
 subject= /CN=EBG Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/O=EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./C=TR
-subject= /CN=SG TRUST SERVICES RACINE/OU=0002 43525289500022/O=SG TRUST SERVICES/C=FR
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=ANKARA/O=(c) 2005 T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E.
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Aral\xC4\xB1k 2007
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Kas\xC4\xB1m 2005
