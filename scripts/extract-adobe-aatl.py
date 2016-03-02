@@ -1,8 +1,9 @@
 #!/bin/python2
 
-from M2Crypto import X509
+import io
 import lxml.etree
 import pdfrw
+import subprocess
 import sys
 import zlib
 
@@ -44,11 +45,20 @@ def main(filename):
             raise Exception("Unrecognized source %s" % import_action)
 
         cert_pem = base64_to_pem(identity.xpath("Certificate/text()")[0])
-        x509 = X509.load_cert_string(cert_pem, X509.FORMAT_PEM)
-        fingerprint = x509.get_fingerprint("sha1")
-        subject = x509.get_subject()
+        process = subprocess.Popen(["openssl",
+                                    "x509",
+                                    "-noout",
+                                    "-fingerprint"],
+                                   stdin=subprocess.PIPE,
+                                   stdout=subprocess.PIPE)
+        fingerprint = process.communicate(input=cert_pem)[0]
+        if process.returncode != 0:
+            raise CalledProcessError()
 
-        print >> sys.stderr, "Exporting %s" % subject
+        fingerprint = fingerprint.replace("SHA1 Fingerprint=", "")
+        fingerprint = fingerprint.replace(":", "")
+        fingerprint = fingerprint.strip()
+
         f = open(fingerprint + ".pem", "w")
         f.write(cert_pem)
         f.close()
