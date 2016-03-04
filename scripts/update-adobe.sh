@@ -15,6 +15,11 @@ fi
 rm -f *.pem
 
 python2 `dirname $0`/extract-adobe-aatl.py $TL
+if [ $? -ne 0 ]; then
+    echo "Failed to extract certificates"
+    rm -f $TL
+    exit 1
+fi
 rm -f $TL
 
 . `dirname $0`/mk-ca-index.sh > $INDEX
