@@ -8,7 +8,6 @@ import subprocess
 import sys
 import zlib
 
-# Note: The PDF signatures on this document will not be checked by this script
 ATTACHMENT_NAME = ("(\xfe\xff\0S\0e\0c\0u\0r\0i\0t\0y\0S\0e\0t\0t\0i\0n\0g\0s"
                    "\0.\0x\0m\0l)")
 HEADER = "-----BEGIN CERTIFICATE-----"
