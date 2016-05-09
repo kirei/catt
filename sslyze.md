@@ -17,14 +17,14 @@ The certificates will then be available in microsoft.pem.
 You need to be on an OS X host, then run:
 
     sudo cpan Mac::PropertyList
-   ./update-osx.sh
+    ./update-osx.sh
 
 The certificates will then be available in apple.pem.
 
 
 ### Mozilla
 
-  ./mk-ca-bundle.pl
+    ./mk-ca-bundle.pl
 
 The certificates will then be available in ca-bundles.crt.
 
@@ -33,10 +33,10 @@ The certificates will then be available in ca-bundles.crt.
 
 You need to be on an OS X host, then run:
 
-  ./extract-java-trust.pl
+    ./extract-java-trust.pl
 
 The certificates will then be available in java.pem.
 
-### Google
+### Android
 
-https://pki.google.com/roots.pem
+    python fetch-aosp.py
