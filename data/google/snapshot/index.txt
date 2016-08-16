@@ -1,0 +1,55 @@
+subject= /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO Certification Authority
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Certification Authority
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=AAA Certificate Services
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=Secure Certificate Services
+subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=Trusted Certificate Services
+subject= /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
+subject= /C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Class 1 CA Root
+subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Public CA Root
+subject= /C=SE/O=AddTrust AB/OU=AddTrust TTP Network/CN=AddTrust Qualified CA Root
+subject= /C=US/O=AffirmTrust/CN=AffirmTrust Commercial
+subject= /C=US/O=AffirmTrust/CN=AffirmTrust Networking
+subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium
+subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium ECC
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G2
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root G3
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G2
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G3
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Trusted Root G4
+subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2009 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - G2
+subject= /C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2012 Entrust, Inc. - for authorized use only/CN=Entrust Root Certification Authority - EC1
+subject= /C=US/O=Entrust, Inc./OU=www.entrust.net/CPS is incorporated by reference/OU=(c) 2006 Entrust, Inc./CN=Entrust Root Certification Authority
+subject= /C=US/O=Equifax/OU=Equifax Secure Certificate Authority
+subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA
+subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Global CA 2
+subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Primary Certification Authority
+subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Universal CA
+subject= /C=US/O=GeoTrust Inc./CN=GeoTrust Universal CA 2
+subject= /C=US/O=GeoTrust Inc./OU=(c) 2007 GeoTrust Inc. - For authorized use only/CN=GeoTrust Primary Certification Authority - G2
+subject= /C=US/O=GeoTrust Inc./OU=(c) 2008 GeoTrust Inc. - For authorized use only/CN=GeoTrust Primary Certification Authority - G3
+subject= /C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority
+subject= /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority
+subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 1999 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G3
+subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G5
+subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2007 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G4
+subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2008 VeriSign, Inc. - For authorized use only/CN=VeriSign Universal Root Certification Authority
+subject= /C=US/O=thawte, Inc./OU=(c) 2007 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA - G2
+subject= /C=US/O=thawte, Inc./OU=Certification Services Division/OU=(c) 2006 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA
+subject= /C=US/O=thawte, Inc./OU=Certification Services Division/OU=(c) 2008 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA - G3
+subject= /C=US/ST=Arizona/L=Scottsdale/O=GoDaddy.com, Inc./CN=Go Daddy Root Certificate Authority - G2
+subject= /C=US/ST=Arizona/L=Scottsdale/O=Starfield Technologies, Inc./CN=Starfield Root Certificate Authority - G2
+subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust ECC Certification Authority
+subject= /C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust RSA Certification Authority
+subject= /C=US/ST=UT/L=Salt Lake City/O=The USERTRUST Network/OU=http://www.usertrust.com/CN=UTN-USERFirst-Hardware
+subject= /O=Cybertrust, Inc/CN=Cybertrust Global Root
+subject= /O=Entrust.net/OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Certification Authority (2048)
+subject= /OU=GlobalSign ECC Root CA - R4/O=GlobalSign/CN=GlobalSign
+subject= /OU=GlobalSign ECC Root CA - R5/O=GlobalSign/CN=GlobalSign
+subject= /OU=GlobalSign Root CA - R2/O=GlobalSign/CN=GlobalSign
+subject= /OU=GlobalSign Root CA - R3/O=GlobalSign/CN=GlobalSign
