@@ -16,9 +16,6 @@ subject= /C=BM/O=QuoVadis Limited/CN=QuoVadis Root CA 3 G3
 subject= /C=BM/O=QuoVadis Limited/OU=Root Certification Authority/CN=QuoVadis Root Certification Authority
 subject= /C=BR/O=ICP-Brasil/OU=Instituto Nacional de Tecnologia da Informacao - ITI/CN=Autoridade Certificadora Raiz Brasileira v1
 subject= /C=BR/O=ICP-Brasil/OU=Instituto Nacional de Tecnologia da Informacao - ITI/CN=Autoridade Certificadora Raiz Brasileira v2
-subject= /C=BR/O=Serasa S.A./OU=Serasa CA I/CN=Serasa Certificate Authority I
-subject= /C=BR/O=Serasa S.A./OU=Serasa CA II/CN=Serasa Certificate Authority II
-subject= /C=BR/O=Serasa S.A./OU=Serasa CA III/CN=Serasa Certificate Authority III
 subject= /C=CA/O=Notarius Inc/CN=Notarius Root Certificate Authority
 subject= /C=CA/ST=Ontario/L=Toronto/O=Echoworx Corporation/OU=Certification Services/CN=Echoworx Root CA2
 subject= /C=CH/O=SwissSign AG/CN=SwissSign Gold CA - G2
@@ -30,8 +27,8 @@ subject= /C=CH/O=SwissSign AG/CN=SwissSign Silver Root CA - G3
 subject= /C=CH/O=The Federal Authorities of the Swiss Confederation/OU=Services/OU=Certification Authorities/CN=Swiss Government Root CA I
 subject= /C=CH/O=The Federal Authorities of the Swiss Confederation/OU=Services/OU=Certification Authorities/CN=Swiss Government Root CA II
 subject= /C=CH/O=WISeKey/OU=Copyright (c) 2005/OU=OISTE Foundation Endorsed/CN=OISTE WISeKey Global Root GA CA
+subject= /C=CH/O=WISeKey/OU=OISTE Foundation Endorsed/CN=OISTE WISeKey Global Root GB CA
 subject= /C=CH/O=admin/OU=Services/OU=Certification Authorities/CN=AdminCA-CD-T01
-subject= /C=CL/ST=Region Metropolitana/L=Santiago/O=E-CERTCHILE/OU=Autoridad Certificadora/emailAddress=sclientes@ccs.cl/CN=E-CERT ROOT CA
 subject= /C=CN/O=CFCA GT CA
 subject= /C=CN/O=CNNIC/CN=CNNIC ROOT
 subject= /C=CN/O=China Financial Certification Authority/CN=CFCA EV ROOT
@@ -71,7 +68,6 @@ subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN
 subject= /C=DE/O=T-Systems Enterprise Services GmbH/OU=T-Systems Trust Center/CN=T-TeleSec GlobalRoot Class 3
 subject= /C=DE/O=TC TrustCenter GmbH/OU=TC TrustCenter Class 3 CA/CN=TC TrustCenter Class 3 CA II
 subject= /C=DE/ST=Baden-Wuerttemberg (BW)/L=Stuttgart/O=Deutscher Sparkassen Verlag GmbH/CN=S-TRUST Authentication and Encryption Root CA 2005:PN
-subject= /C=DK/O=TDC/CN=TDC OCES CA
 subject= /C=DK/O=TRUST2408/CN=TRUST2408 OCES Primary CA
 subject= /C=EE/O=AS Sertifitseerimiskeskus/CN=EE Certification Centre Root CA/emailAddress=pki@sk.ee
 subject= /C=ES/CN=Autoridad de Certificacion Firmaprofesional CIF A62634068
@@ -110,6 +106,7 @@ subject= /C=FR/O=Certplus/CN=Class 3 Primary CA
 subject= /C=FR/O=Certplus/CN=Class 3P Primary CA
 subject= /C=FR/O=Certplus/CN=Class 3TS Primary CA
 subject= /C=FR/O=Dhimyotis/CN=Certigna
+subject= /C=FR/O=Dhimyotis/OU=0002 48146308100036/CN=Certigna Root CA
 subject= /C=FR/O=KEYNECTIS/OU=ROOT/CN=KEYNECTIS ROOT CA
 subject= /C=FR/O=OpenTrust/CN=OpenTrust Root CA G1
 subject= /C=FR/O=OpenTrust/CN=OpenTrust Root CA G2
@@ -133,7 +130,6 @@ subject= /C=HU/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/
 subject= /C=HU/L=Budapest/O=NetLock Kft./OU=Tan\xC3\xBAs\xC3\xADtv\xC3\xA1nykiad\xC3\xB3k (Certification Services)/CN=NetLock Arany (Class Gold) F\xC5\x91tan\xC3\xBAs\xC3\xADtv\xC3\xA1ny
 subject= /C=HU/L=Budapest/O=NetLock Kft./OU=Tan\xC3\xBAs\xC3\xADtv\xC3\xA1nykiad\xC3\xB3k (Certification Services)/CN=NetLock Platina (Class Platinum) F\xC5\x91tan\xC3\xBAs\xC3\xADtv\xC3\xA1ny
 subject= /C=HU/ST=Hungary/L=Budapest/O=NetLock Halozatbiztonsagi Kft./OU=Tanusitvanykiadok/CN=NetLock Kozjegyzoi (Class A) Tanusitvanykiado
-subject= /C=IE/O=An Post/OU=Post.Trust Ltd./CN=Post.Trust Root CA
 subject= /C=IE/O=Baltimore/OU=CyberTrust/CN=Baltimore CyberTrust Root
 subject= /C=IL/O=PersonalID Ltd./OU=Certificate Services/CN=PersonalID Trustworthy RootCA 2011
 subject= /C=IL/O=StartCom Ltd./CN=StartCom Certification Authority G2
@@ -155,7 +151,6 @@ subject= /C=JP/O=LGPKI/OU=Application CA G2
 subject= /C=JP/O=SECOM Trust Systems CO.,LTD./OU=Security Communication EV RootCA1
 subject= /C=JP/O=SECOM Trust Systems CO.,LTD./OU=Security Communication RootCA2
 subject= /C=JP/O=SECOM Trust.net/OU=Security Communication RootCA1
-subject= /C=KR/O=Government of Korea/OU=GPKI/CN=GPKIRootCA
 subject= /C=KR/O=Government of Korea/OU=GPKI/CN=GPKIRootCA1
 subject= /C=KR/O=KISA/OU=Korea Certification Authority Central/CN=KISA RootCA 1
 subject= /C=LT/O=Skaitmeninio sertifikavimo centras/OU=CA ROOT Services/CN=SSC GDL CA Root B
@@ -192,6 +187,7 @@ subject= /C=SE/O=Carelink/CN=SITHS CA v3
 subject= /C=SE/O=Inera AB/CN=SITHS Root CA v1
 subject= /C=SE/O=Swedish Social Insurance Agency/CN=Swedish Government Root Authority v1
 subject= /C=SE/O=Swedish Social Insurance Agency/CN=Swedish Government Root Authority v2
+subject= /C=SE/O=Swedish Social Insurance Agency/CN=Swedish Government Root Authority v3
 subject= /C=SG/O=Netrust Certificate Authority 1/OU=Netrust CA1
 subject= /C=SI/O=ACNLB
 subject= /C=SI/O=Halcom/CN=Halcom CA FO
@@ -218,6 +214,10 @@ subject= /C=US/O=AffirmTrust/CN=AffirmTrust Commercial
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Networking
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium
 subject= /C=US/O=AffirmTrust/CN=AffirmTrust Premium ECC
+subject= /C=US/O=Amazon/CN=Amazon Root CA 1
+subject= /C=US/O=Amazon/CN=Amazon Root CA 2
+subject= /C=US/O=Amazon/CN=Amazon Root CA 3
+subject= /C=US/O=Amazon/CN=Amazon Root CA 4
 subject= /C=US/O=America Online Inc./CN=America Online Root Certification Authority 1
 subject= /C=US/O=Cisco Systems/CN=Cisco RXC-R2
 subject= /C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
@@ -248,6 +248,7 @@ subject= /C=US/O=Network Solutions L.L.C./CN=Network Solutions Certificate Autho
 subject= /C=US/O=SecureTrust Corporation/CN=Secure Global CA
 subject= /C=US/O=SecureTrust Corporation/CN=SecureTrust CA
 subject= /C=US/O=Starfield Technologies, Inc./OU=Starfield Class 2 Certification Authority
+subject= /C=US/O=Symantec Corporation/CN=Symantec Enterprise Mobile Root for Microsoft
 subject= /C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 1 Public Primary Certification Authority - G4
 subject= /C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 1 Public Primary Certification Authority - G6
 subject= /C=US/O=Symantec Corporation/OU=Symantec Trust Network/CN=Symantec Class 2 Public Primary Certification Authority - G4
@@ -267,6 +268,7 @@ subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, 
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2007 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G4
 subject= /C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2008 VeriSign, Inc. - For authorized use only/CN=VeriSign Universal Root Certification Authority
 subject= /C=US/O=Verizon Business/OU=OmniRoot/CN=Verizon Global Root CA
+subject= /C=US/O=WFA Hotspot 2.0/CN=Hotspot 2.0 Trust Root CA - 03
 subject= /C=US/O=Wells Fargo WellsSecure/OU=Wells Fargo Bank NA/CN=WellsSecure Public Root Certificate Authority
 subject= /C=US/O=Wells Fargo WellsSecure/OU=Wells Fargo Bank NA/CN=WellsSecure Public Root Certification Authority 01 G2
 subject= /C=US/O=thawte, Inc./OU=(c) 2007 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA - G2
@@ -308,16 +310,13 @@ subject= /CN=ACEDICOM Root/OU=PKI/O=EDICOM/C=ES
 subject= /CN=Atos TrustedRoot 2011/O=Atos/C=DE
 subject= /CN=Autoridad Certificadora Ra\xC3\xADz Nacional de Uruguay/O=AGESIC/C=UY
 subject= /CN=Autoridad de Certificacion Raiz del Estado Venezolano/C=VE/L=Caracas/ST=Distrito Capital/O=Sistema Nacional de Certificacion Electronica/OU=Superintendencia de Servicios de Certificacion Electronica/emailAddress=acraiz@suscerte.gob.ve
+subject= /CN=CAEDICOM Root/O=EDICOM/C=ES
 subject= /CN=ComSign Advanced Security CA
 subject= /CN=ComSign CA/O=ComSign/C=IL
 subject= /CN=ComSign Global Root CA/O=ComSign Ltd./C=IL
 subject= /CN=ComSign Secured CA/O=ComSign/C=IL
 subject= /CN=EBG Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/O=EBG Bili\xC5\x9Fim Teknolojileri ve Hizmetleri A.\xC5\x9E./C=TR
-subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=ANKARA/O=(c) 2005 T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E.
 subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Aral\xC4\xB1k 2007
-subject= /CN=T\xC3\x9CRKTRUST Elektronik Sertifika Hizmet Sa\xC4\x9Flay\xC4\xB1c\xC4\xB1s\xC4\xB1/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Kas\xC4\xB1m 2005
-subject= /CN=T\xC3\x9CRKTRUST Elektronik \xC4\xB0\xC5\x9Flem Hizmetleri/C=TR/L=ANKARA/O=(c) 2005 T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E.
-subject= /CN=T\xC3\x9CRKTRUST Elektronik \xC4\xB0\xC5\x9Flem Hizmetleri/C=TR/L=Ankara/O=T\xC3\x9CRKTRUST Bilgi \xC4\xB0leti\xC5\x9Fim ve Bili\xC5\x9Fim G\xC3\xBCvenli\xC4\x9Fi Hizmetleri A.\xC5\x9E. (c) Kas\xC4\xB1m 2005
 subject= /CN=esignit.org
 subject= /DC=com/DC=microsoft/CN=Microsoft Root Certificate Authority
 subject= /DC=rs/DC=posta/DC=ca/CN=Configuration/CN=Services/CN=Public Key Services/CN=AIA/CN=Posta CA Root
