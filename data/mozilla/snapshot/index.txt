@@ -33,8 +33,13 @@ subject= /C=EU/O=AC Camerfirma SA CIF A82743287/OU=http://www.chambersign.org/CN
 subject= /C=FI/O=Sonera/CN=Sonera Class2 CA
 subject= /C=FR/O=Certinomis/OU=0002 433998903/CN=Certinomis - Autorit\xC3\xA9 Racine
 subject= /C=FR/O=Certinomis/OU=0002 433998903/CN=Certinomis - Root CA
+subject= /C=FR/O=Certplus/CN=Certplus Root CA G1
+subject= /C=FR/O=Certplus/CN=Certplus Root CA G2
 subject= /C=FR/O=Certplus/CN=Class 2 Primary CA
 subject= /C=FR/O=Dhimyotis/CN=Certigna
+subject= /C=FR/O=OpenTrust/CN=OpenTrust Root CA G1
+subject= /C=FR/O=OpenTrust/CN=OpenTrust Root CA G2
+subject= /C=FR/O=OpenTrust/CN=OpenTrust Root CA G3
 subject= /C=FR/ST=France/L=Paris/O=PM/SGDN/OU=DCSSI/CN=IGC/A/emailAddress=igca@sgdn.pm.gouv.fr
 subject= /C=GB/O=Trustis Limited/OU=Trustis FPS Root CA
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO Certification Authority
@@ -43,6 +48,8 @@ subject= /C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=AAA Certificate Services
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=Secure Certificate Services
 subject= /C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=Trusted Certificate Services
+subject= /C=GR/L=Athens/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions ECC RootCA 2015
+subject= /C=GR/L=Athens/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions RootCA 2015
 subject= /C=GR/O=Hellenic Academic and Research Institutions Cert. Authority/CN=Hellenic Academic and Research Institutions RootCA 2011
 subject= /C=HK/O=Hongkong Post/CN=Hongkong Post Root CA 1
 subject= /C=HU/L=Budapest/O=Microsec Ltd./CN=Microsec e-Szigno Root CA 2009/emailAddress=info@e-szigno.hu
