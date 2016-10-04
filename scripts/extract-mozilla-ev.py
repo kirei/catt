@@ -163,11 +163,12 @@ def extract_ev_data(url, verbose):
         for i in range(len(raw_cert)):
             if "{" in raw_cert[i]:
                 del_index = (i + 1)
-                raw_cert[i] = raw_cert[i] + " " + raw_cert[(i + 1)]
+                raw_cert[i] = raw_cert[i] + " " + raw_cert[(i + 1)] + " " + raw_cert[(i + 2)]
                 if verbose:
                     print "Fingerprint bytes:"
                     print raw_cert[i]
         del raw_cert[del_index]
+        del raw_cert[del_index + 1]
 
 
     # Secondary parser. Scans through the db with extracted certs
