@@ -49,7 +49,10 @@ import json
 #-------------------------------------------------------------------
 # Constants.
 #-------------------------------------------------------------------
-MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/certverifier/ExtendedValidation.cpp?raw=1"
+#MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/certverifier/ExtendedValidation.cpp?raw=1"
+MOZ_SOURCE_URL = "https://raw.githubusercontent.com/mozilla/gecko-dev/master/security/certverifier/ExtendedValidation.cpp"
+TRUSTED_EV_STRUCT = "static struct nsMyTrustedEVInfo myTrustedEVInfos"
+test_certs = ["PSM xpcshell testing EV certificate", "This is an RSA root with an inadequate key size", "DEBUG"]
 
 
 #-------------------------------------------------------------------
@@ -69,7 +72,7 @@ def output_ev_data(ev_data_db, output_format, output_name, verbose):
 
     if output_format == 'sslyze':
         print oid_list
-                            
+
     elif output_format == 'json':
         if output_name:
             with open(output_name, 'wb') as json_file:
@@ -96,22 +99,22 @@ def extract_ev_data(url, verbose):
     try:
         html = urllib2.urlopen(url).read()
     except URLError as e:
-        print e.reason 
+        print e.reason
     html_lines = html.splitlines()
- 
+
     # Initial parser. Scans through all lines and creates a db with one
     # array of lines for each certifcate struct found in the source.
-    struct_name = "static struct nsMyTrustedEVInfo myTrustedEVInfos"
+    struct_name = TRUSTED_EV_STRUCT
     in_struct = False
     in_cert = False
     key = 0
     tmp_list = []
     tmp_db = {}
 
-    for line in html_lines:        
+    for line in html_lines:
         if in_cert and in_struct:
             tmp_list.append(line.strip())
-            
+
         if in_struct and "};" in line:
             in_struct = False
             if verbose:
@@ -144,21 +147,25 @@ def extract_ev_data(url, verbose):
         print
 
     # Remove any test certs.
-    test_cert_CN = "XPCShell EV Testing (untrustworthy) CA"
-    test_cert_found = False
-    test_cert_id = 0
+    print("Scanning for test EVs:")
+    debug_certs = []
     for key in tmp_db:
         raw_cert = tmp_db[key]
-        for cert_element in raw_cert:
-            if test_cert_CN in cert_element:
-                test_cert_found = True
-                test_cert_id = key
-                if verbose:
-                    print "Found test cert!"
-                    print raw_cert
-    if test_cert_found:
-        tmp_db.pop(test_cert_id, None)
 
+        debug_cert = False
+        for cert_element in raw_cert:
+            for debug_string in test_certs:
+                if debug_string in cert_element:
+                    debug_cert = True
+
+        if debug_cert:
+            debug_certs.append(key)
+            if verbose:
+                print "Found test cert!"
+                print raw_cert
+
+    for cert in debug_certs:
+        tmp_db.pop(cert, None)
 
     # Merge lines with fingerprint bytes.
     # Removes the second line after merge.
@@ -210,11 +217,13 @@ def extract_ev_data(url, verbose):
 #-------------------------------------------------------------------
 def main():
 
-    parser = argparse.ArgumentParser(description='Extract the EV data fields OID and fingerprint from Mozilla source code and other URLs. The extracted EV data can be emitted in a few different formats such as generic with one OID per line, a format suitable for inclusion on sslyzer or a JSON blob.')
+    parser = argparse.ArgumentParser(description='Extract the EV data fields OID and fingerprint\
+    from Mozilla source code and other URLs. The extracted EV data can be emitted in a few different\
+    formats such as generic with one OID per line, a format suitable for inclusion on sslyzer or a JSON blob.')
 
     parser.add_argument("-f", "--format", action="store", default="generic",
                         help="Emit data in specific format. Acceptable values are 'generic', 'sslyze' and 'json'. Default is 'generic'.")
-    
+
     parser.add_argument("-u", "--url", action="store", default=MOZ_SOURCE_URL,
                         help="Extract EV data from the given URL. If no URL is given, the URL for Mozilla will be used.")
 
@@ -230,7 +239,7 @@ def main():
     else:
         print "Error: No EV data could be extracted from the url."
 
-    
+
 #-------------------------------------------------------------------
 # __name__
 #
