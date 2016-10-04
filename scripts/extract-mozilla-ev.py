@@ -49,10 +49,8 @@ import json
 #-------------------------------------------------------------------
 # Constants.
 #-------------------------------------------------------------------
-#MOZ_SOURCE_URL = "https://mxr.mozilla.org/mozilla-central/source/security/certverifier/ExtendedValidation.cpp?raw=1"
 MOZ_SOURCE_URL = "https://raw.githubusercontent.com/mozilla/gecko-dev/master/security/certverifier/ExtendedValidation.cpp"
 TRUSTED_EV_STRUCT = "static struct nsMyTrustedEVInfo myTrustedEVInfos"
-test_certs = ["PSM xpcshell testing EV certificate", "This is an RSA root with an inadequate key size", "DEBUG"]
 
 
 #-------------------------------------------------------------------
@@ -107,65 +105,55 @@ def extract_ev_data(url, verbose):
     struct_name = TRUSTED_EV_STRUCT
     in_struct = False
     in_cert = False
+    debug_certs = False
     key = 0
     tmp_list = []
     tmp_db = {}
 
     for line in html_lines:
-        if in_cert and in_struct:
+        if in_cert and in_struct and not debug_certs:
             tmp_list.append(line.strip())
+
+        if in_struct and "#ifdef DEBUG" in line:
+            debug_certs = True
+            if verbose:
+                print "Start of debug certs section in nsMyTrustedEVInfo found."
+
+        if in_struct and debug_certs and "#endif" in line:
+            debug_certs = False
+            if verbose:
+                print "End of debug certs section in nsMyTrustedEVInfo found."
 
         if in_struct and "};" in line:
             in_struct = False
             if verbose:
-                print "End of nsMyTrustedEVInfo struct detected."
+                print "End of nsMyTrustedEVInfo struct found."
 
-        if struct_name in line:
-            in_struct = True
-            if verbose:
-                print "Found the nsMyTrustedEVInfo struct with all cert structs."
-
-        if in_cert and line[2] == "}":
+        if in_cert and line[2] == "}" and not debug_certs:
             in_cert = False
             tmp_list.pop()  # Remove trailing bracket.
             tmp_db[key] = tmp_list
             key += 1
             if verbose:
-                print "End of cert detected."
+                print "End of cert found."
                 print "Extracted lines for the cert:"
                 print tmp_list
 
-        if in_struct and line[2] == "{":
+        if in_struct and line[2] == "{" and not debug_certs:
             in_cert = True
             tmp_list = []
             if verbose:
-                print "Start of new cert found."
+                print "Start of cert found."
+
+        if struct_name in line:
+            in_struct = True
+            if verbose:
+                print "Start of the nsMyTrustedEVInfo struct found."
 
     if verbose:
         print "\nExtracted certs:"
         print tmp_db
         print
-
-    # Remove any test certs.
-    print("Scanning for test EVs:")
-    debug_certs = []
-    for key in tmp_db:
-        raw_cert = tmp_db[key]
-
-        debug_cert = False
-        for cert_element in raw_cert:
-            for debug_string in test_certs:
-                if debug_string in cert_element:
-                    debug_cert = True
-
-        if debug_cert:
-            debug_certs.append(key)
-            if verbose:
-                print "Found test cert!"
-                print raw_cert
-
-    for cert in debug_certs:
-        tmp_db.pop(cert, None)
 
     # Merge lines with fingerprint bytes.
     # Removes the second line after merge.
