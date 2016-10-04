@@ -102,6 +102,7 @@ def extract_ev_data(url, verbose):
 
     # Initial parser. Scans through all lines and creates a db with one
     # array of lines for each certifcate struct found in the source.
+    # We ignore any certificates in debug section of the parsed struct.
     struct_name = TRUSTED_EV_STRUCT
     in_struct = False
     in_cert = False
