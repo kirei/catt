@@ -5,7 +5,7 @@ import subprocess
 import os
 
 TRUST_STORE_REPO_URL = 'https://android.googlesource.com/platform/system/ca-certificates'
-TRUST_STORE_TAG = 'android-n-preview-2'
+TRUST_STORE_TAG = 'android-7.0.0_r1'
 script_folder_path = os.path.dirname(os.path.abspath(__file__))
 TRUST_STORE_LOCAL_PATH = os.path.join(script_folder_path, '..', 'data', 'aosp')
 FINAL_LOCAL_FILE = os.path.join(script_folder_path, 'aosp.pem')
