@@ -6,7 +6,8 @@ use warnings;
 use strict;
 
 my $keystore =
-"/System/Library/Java/Support/CoreDeploy.bundle/Contents/Home/lib/security/cacerts";
+"/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/security/cacerts";
+#"/System/Library/Java/Support/CoreDeploy.bundle/Contents/Home/lib/security/cacerts";
 $keystore = $ARGV[0] if ($#ARGV >= 0);
 
 my $keytool =
