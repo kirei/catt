@@ -6,7 +6,7 @@ use warnings;
 use strict;
 
 my $keystore =
-"/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/security/cacerts";
+"/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/security/cacerts";
 #"/System/Library/Java/Support/CoreDeploy.bundle/Contents/Home/lib/security/cacerts";
 $keystore = $ARGV[0] if ($#ARGV >= 0);
 
@@ -27,5 +27,5 @@ close(CERTLIST);
 
 foreach my $alias (@aliases) {
     printf STDERR ("Exporting %s\n", $alias);
-    system("$keytool -exportcert -alias $alias | openssl x509 -inform der >> java.pem");
+    system("$keytool -exportcert -alias \"$alias\" | openssl x509 -inform der >> java.pem");
 }
